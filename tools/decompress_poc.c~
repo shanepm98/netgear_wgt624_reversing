@@ -1,0 +1,17 @@
+/*
+
+  Shane Mullin
+  11/22/2025
+
+  PoC to see if the algorithm actually decompresses the firmware image correctly.
+
+ */
+
+// includes
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+
+
+
