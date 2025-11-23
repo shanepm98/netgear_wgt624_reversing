@@ -1,0 +1,31 @@
+(nofunc) 0xe6624 [CALL] beql a0, t7, 0xea200
+(nofunc) 0xf8428 [CALL] beq t5, s0, 0xedc00
+(nofunc) 0x109308 [CALL] bne s7, gp, 0x1207f8
+(nofunc) 0xea7dc [CALL] beq t9, ra, 0xeac30
+(nofunc) 0x17b124 [CALL] bnel s2, a2, 0x18323c
+(nofunc) 0x1983ec [CALL] bgtz t2, 0x18d2dc
+(nofunc) 0x1a5e3c [CALL] bne t2, gp, 0x1bcee8
+(nofunc) 0x1a855c [CALL] bnel s0, t5, 0x1b50f4
+(nofunc) 0x19e2d4 [CALL] beql t6, t3, 0x1bcef8
+(nofunc) 0x1a752c [CALL] beq t7, s7, 0x1876f8
+(nofunc) 0xf6be4 [CALL] beq t9, s3, 0xead00
+(nofunc) 0xe7584 [CALL] beq k0, a2, 0xd1548
+(nofunc) 0x19b1dc [CALL] bnz.d w24, 0x18334c
+(nofunc) 0x1a2164 [CALL] beql k0, t6, 0x189a00
+(nofunc) 0x17f6e4 [CALL] bz.h w0, 0x187768
+(nofunc) 0x181ee4 [CALL] bz.h w0, 0x189f68
+(nofunc) 0x19888c [CALL] bne t1, s5, 0x187768
+(nofunc) 0x10822c [CALL] bnel t5, k0, 0xead80
+(nofunc) 0x15fc9c [CALL] bnel t6, ra, 0x17c380
+(nofunc) 0x1a3e70 [CALL] bne s7, s6, 0x1bcf88
+(nofunc) 0x190d50 [CALL] bne s0, s3, 0x17a5fc
+(nofunc) 0x9c37c [CALL] beql s2, a3, 0xb51d8
+(nofunc) 0x193bf4 [CALL] beq zero, t3, 0x1b31d8
+(nofunc) 0x1047bc [CALL] bnel s2, k1, 0xeb5dc
+(nofunc) 0x17f998 [CALL] beq t1, at, 0x183de8
+(nofunc) 0x195c58 [CALL] beql t5, t8, 0x1b0be8
+(nofunc) 0x1a937c [CALL] beql v0, v0, 0x1be1f0
+(nofunc) 0x19e9e4 [CALL] bnel s3, a0, 0x1b55fc
+(nofunc) 0x19ad1c [CALL] blezl a3, 0x1b4a00
+(nofunc) 0xb370c [CALL] bnel sp, t7, 0xc4048
+(nofunc) 0xdea04 [CALL] bne s3, t8, 0xc4060
