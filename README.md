@@ -13,4 +13,4 @@ binwalk to recognize vxworks magic numbers and decompress the firwmare image.
 
 # TODO
 - make a header file for the vxworks compress functions
-- Fix the seg fault in the decompression program. I've identified the source of the crash as the BLK_IS_VALID() macro casting the 64-bit pointer to a 32-bit int. Need to figure out how to patch the code without breaking something else
+- Fix the seg fault in the decompression program. I've identified the source of the crash as the BLK_IS_VALID() macro casting the 64-bit pointer to a 32-bit int. Need to figure out how to patch the code without breaking something else. Because the program is segfaulting, it's not decompressing the entire firmware image. See if I can just replace zcalloc with a wrapper for normal calloc()...
