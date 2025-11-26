@@ -199,16 +199,19 @@ Notes beyond the 1.93a appnote.txt:
    a repeat code (16, 17, or 18) to go across the boundary between
    the two sets of lengths.
 */
+
+
 /* includes */
 #include <stdio.h>
 #include <stdlib.h>
-//#include <string.h>
-
-//#define Byte unsigned char
 
 
 /* definitions */
 /* Maximum value for windowBits in deflateInit2 and inflateInit */
+
+#define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
+
+
 #define DEF_WBITS   15 /* 32K LZ77 window */
 #define PRESET_DICT 0x20 /* preset dictionary flag in zlib header */
                         /* Type declarations */
@@ -339,7 +342,7 @@ Notes beyond the 1.93a appnote.txt:
 #  define Tracevv(x) {if (verbose>1) fprintf x ;}
 #  define Tracec(c,x) {if (verbose && (c)) fprintf x ;}
 #  define Tracecv(c,x) {if (verbose>1 && (c)) fprintf x ;}
-#  define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
+//#  define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
 #else
 #  define Assert(cond,msg)
 #  define Trace(x)
@@ -347,7 +350,7 @@ Notes beyond the 1.93a appnote.txt:
 #  define Tracevv(x)
 #  define Tracec(c,x)
 #  define Tracecv(c,x)
-#  define DBG_PUT(a,b)
+//#  define DBG_PUT(a,b)
 #endif
 /* internal data types */
 typedef unsigned char Byte;  /* 8 bits */
@@ -695,7 +698,7 @@ s2 += s1;
 * cksum - compute checksum
 *
 */ 
-static ush cksum
+ush cksum
 (
  ush prevSum, /* previous total */
  const uch * buf, /* buffer to checksum */
@@ -756,43 +759,44 @@ static ush cksum
   return (shorty.s);
 }
 /******************************************************************************
-*
-* zcalloc - allocate memory
-*/ 
+ *
+ * zcalloc - allocate memory
+ */ 
 static voidp zcalloc
-    (
-    voidp opaque,
-    unsigned items,
-    unsigned size
-    )
-    {
-    voidp thisBlock = (voidp)nextBlock;
-    int nBytes = ROUND_UP (items * size);
-    if ((char *)thisBlock + nBytes + BLK_HDR_SIZE >= &buf[BUF_SIZE])
+(
+ voidp opaque,
+ unsigned items,
+ unsigned size
+ )
 {
-DBG_PUT ("zcalloc %d bytes: buffer overflow!n", nBytes);
-return (0);
-}
-    nextBlock = (char *)thisBlock + nBytes + BLK_HDR_SIZE;
-    BLK_HDRS_LINK (thisBlock, nextBlock);
-    return (thisBlock);
+  voidp thisBlock = (voidp)nextBlock;
+  int nBytes = ROUND_UP (items * size);
+  printf("[*] Entering zcalloc with opaque = %p, items = %d, size = %d, thisBlock = %p, &buf[BUF_SIZE] == %p\n", opaque, items, size, thisBlock, &buf[BUF_SIZE]);
+  if ((char *)thisBlock + nBytes + BLK_HDR_SIZE >= &buf[BUF_SIZE])
+    {
+      DBG_PUT ("[!] zcalloc %d bytes: buffer overflow!\n", nBytes);
+      return (0);
     }
+  nextBlock = (char *)thisBlock + nBytes + BLK_HDR_SIZE;
+  BLK_HDRS_LINK (thisBlock, nextBlock);
+  return (thisBlock);
+}
 /******************************************************************************
-*
-* zcfree - free memory
-*/ 
+ *
+ * zcfree - free memory
+ */ 
 static void  zcfree
 (
  voidp opaque,
  voidp ptr
  )
 {
-  return; // patched this function out
+  //  return; // patched this function out
   voidp thisBlock;
   /* make sure block is valid */
   if (!BLK_IS_VALID(ptr))
     {
-      DBG_PUT ("free at invalid address 0x%xn", ptr);
+      DBG_PUT ("free at invalid address 0x%x\n", ptr);
       return;
     }
   /* mark block as free */
@@ -1934,11 +1938,11 @@ z_streamp z;
   return Z_OK;
 }
 /******************************************************************************
-*
-* inflateInit - initializes inflate
-*/ 
+ *
+ * inflateInit - initializes inflate
+ */ 
 static int inflateInit(z)
-z_streamp z;
+     z_streamp z;
 {
   int w = DEF_WBITS;
   /* initialize state */
@@ -1946,10 +1950,10 @@ z_streamp z;
     return Z_STREAM_ERROR;
   z->msg = Z_NULL;
   if (z->zalloc == Z_NULL)
-  {
-    z->zalloc = zcalloc;
-    z->opaque = (voidp)0;
-  }
+    {
+      z->zalloc = zcalloc;
+      z->opaque = (voidp)0;
+    }
   if (z->zfree == Z_NULL) z->zfree = zcfree;
   if ((z->state = (struct internal_state  *)
        ZALLOC(z,1,sizeof(struct internal_state))) == Z_NULL)
@@ -1958,25 +1962,25 @@ z_streamp z;
   /* handle undocumented nowrap option (no zlib header or check) */
   z->state->nowrap = 0;
   if (w < 0)
-  {
-    w = - w;
-    z->state->nowrap = 1;
-  }
+    {
+      w = - w;
+      z->state->nowrap = 1;
+    }
   /* set window size */
   if (w < 8 || w > 15)
-  {
-    inflateEnd(z);
-    return Z_STREAM_ERROR;
-  }
+    {
+      inflateEnd(z);
+      return Z_STREAM_ERROR;
+    }
   z->state->wbits = (uInt)w;
   /* create inflate_blocks state */
   if ((z->state->blocks =
-      inflate_blocks_new(z, z->state->nowrap ? Z_NULL : adler32, (uInt)1 << w))
+       inflate_blocks_new(z, z->state->nowrap ? Z_NULL : adler32, (uInt)1 << w))
       == Z_NULL)
-  {
-    inflateEnd(z);
-    return Z_MEM_ERROR;
-  }
+    {
+      inflateEnd(z);
+      return Z_MEM_ERROR;
+    }
   Trace((stderr, "inflate: allocatedn"));
   /* reset state */
   inflateReset(z);
@@ -2104,7 +2108,7 @@ break;
   }
 }
 /* global variables */
-int inflateCksum = 0; /* set to TRUE to validate compressed checksum */
+int inflateCksum = 1; /* set to TRUE to validate compressed checksum */
 /******************************************************************************
 *
 * inflate - inflate compressed code
@@ -2144,17 +2148,20 @@ int inflate
    */
   if (*src != Z_DEFLATED)
     {
-      DBG_PUT ("inflate error: *src = %d. not Z_DEFLATED datan", *src);
+      DBG_PUT ("[!] inflate error: *src = %d. not Z_DEFLATED data\n", *src);
       return (-1);
     }
   if (inflateCksum)
     {
       if (cksum (0, src, nBytes) != 0xffff)
 	{
-	  DBG_PUT ("checksum error: 0x%x != 0xffffnn", 
+	  DBG_PUT ("[!] checksum error: 0x%x != 0xffff\n", 
 		   cksum (0, src, nBytes));
 	  return (-1);
 	}
+      else {
+	printf("[*] Checksum == 0x%x...\n", cksum(0, src, nBytes));
+      }
     }
   src++;
   nBytes -= 3;

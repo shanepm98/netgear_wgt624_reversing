@@ -18,7 +18,6 @@
 
 // prototypes
 int inflate(unsigned char*, unsigned char*, int);
-unsigned short cksum(unsigned short, unsigned char*, unsigned long);
 
 
 //----------------------------
@@ -48,26 +47,9 @@ int main (int argc, char** argv){
   for(int i = 0; i < size; i++){
     src[i] = (char)fgetc(fp);
   }
-
-
-  
-  // search for first valid checksum point
-  // This is slow as shit. Should replace it with binary search when I get the chance
-  printf("[*] Searching for end of compressed block...\n");
-  int nBytes = 256;
-  int csum = 0;
-  while(((csum = cksum(0, src, nBytes)) != 0xffff) && nBytes <= size){
-    nBytes += 16;
-  }
-  if(csum != 0xffff){
-    printf("[!] No valid checksum detected! Should be 0xffff, only found 0x%x\n", csum);
-    return(EXIT_FAILURE);
-  }
-  printf("[*] Valid checksum of 0xffff found at length %d bytes\n", nBytes);
-  
   
   // *fingers crossed* run the decompression algorithm
-  inflate(src, dst, nBytes);
+  inflate(src, dst, size);
 
   // write output to file
   fclose(fp);

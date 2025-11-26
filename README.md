@@ -9,3 +9,7 @@ I have yet to actually test the code on my firmware. But if it works, Im going t
 the library file I made from it, and a standalone tool for decompressing vxworks firwmare images. I also plan on contributing a model to
 binwalk to recognize vxworks magic numbers and decompress the firwmare image.
 
+
+
+# TODO
+make a header file for the vxworks compress functions

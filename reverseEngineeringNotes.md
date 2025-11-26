@@ -55,3 +55,38 @@ gcc decompress_poc.c -o test -L$(pwd) -lvxworkscompress
 
 ### SUCCESS!
 It looks like the fucking thing actually worked. It produced valid and coherant mips code. 
+
+
+
+# Notes on the compression format
+As the vxworks source code and publicly-available documentation explains, vxworks's compression algorithm is a modified version of zlib.
+
+
+Note the following line from the source code:
+```c
+  /*
+   * Validate the compression stream.
+   * The first byte should be Z_DEFLATED, the last two a valid checksum.
+   */
+  if (*src != Z_DEFLATED)
+    {
+      DBG_PUT ("inflate error: *src = %d. not Z_DEFLATED datan", *src);
+      return (-1);
+    }
+```
+
+where
+```c
+#define Z_DEFLATED   8
+```
+
+As we can see, `8` is kind of a magic number for the compression format. The first byte of the compressed stream will be `8` (else decompression function will abort).
+Additionally, the last two bytes should be a valid checksum.
+
+
+
+Question: does the `cksum` function actually care about the number of bytes? Yes, it does. 
+
+
+
+I manually enabled checksum verification and debug messages. The variable is `inflateCksum`. Change it back to 0 if needed

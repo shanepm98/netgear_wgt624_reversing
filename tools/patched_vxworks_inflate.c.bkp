@@ -199,10 +199,19 @@ Notes beyond the 1.93a appnote.txt:
    a repeat code (16, 17, or 18) to go across the boundary between
    the two sets of lengths.
 */
+
+
 /* includes */
-#include "types/vxCpu.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
 /* definitions */
 /* Maximum value for windowBits in deflateInit2 and inflateInit */
+
+#define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
+
+
 #define DEF_WBITS   15 /* 32K LZ77 window */
 #define PRESET_DICT 0x20 /* preset dictionary flag in zlib header */
                         /* Type declarations */
@@ -231,8 +240,7 @@ Notes beyond the 1.93a appnote.txt:
 #define BASE 65521L /* largest prime smaller than 65536 */
 #define NMAX 5552
 /* NMAX is the largest n such that 255n(n+1)/2 + (n+1)(BASE-1) <= 2^32-1 */
-#define ZALLOC(strm, items, size) 
-           (*((strm)->zalloc))((strm)->opaque, (items), (size))
+#define ZALLOC(strm, items, size) (*((strm)->zalloc))((strm)->opaque, (items), (size))
 #define ZFREE(strm, addr)  (*((strm)->zfree))((strm)->opaque, (voidp)(addr))
 #define TRY_FREE(s, p) {if (p) ZFREE(s, p);}
 /* ===========================================================================
@@ -310,15 +318,10 @@ Notes beyond the 1.93a appnote.txt:
 #define BLK_HDR_SIZE (2 * sizeof(int))
 #define BLK_NEXT(b) (*(((int *)(b)) - 1))
 #define BLK_PREV(b) (*(((int *)(b)) - 2))
-#define BLK_HDRS_LINK(this,next)
-{
-BLK_NEXT(this) = (int)(next);
-BLK_PREV(next) = (int)(this);
-}
+#define BLK_HDRS_LINK(this,next){BLK_NEXT(this) = (int)(next);BLK_PREV(next) = (int)(this);}
 #define BLK_IS_FREE(b) (BLK_NEXT(b) & 1)
 #define BLK_FREE_SET(b) (BLK_NEXT(b) |= 1)
-#define BLK_IS_VALID(b) (((char *)b == buf)
-|| (BLK_PREV(BLK_NEXT(b)) == (int)(b)))
+#define BLK_IS_VALID(b) (((char *)b == buf)|| (BLK_PREV(BLK_NEXT(b)) == (int)(b)))
 /* simplify the use of the inflate_huft type with some defines */
 #define base more.Base
 #define next more.Next
@@ -339,7 +342,7 @@ BLK_PREV(next) = (int)(this);
 #  define Tracevv(x) {if (verbose>1) fprintf x ;}
 #  define Tracec(c,x) {if (verbose && (c)) fprintf x ;}
 #  define Tracecv(c,x) {if (verbose>1 && (c)) fprintf x ;}
-#  define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
+//#  define DBG_PUT(a,b) fprintf (stderr, a, (unsigned int)b);
 #else
 #  define Assert(cond,msg)
 #  define Trace(x)
@@ -347,7 +350,7 @@ BLK_PREV(next) = (int)(this);
 #  define Tracevv(x)
 #  define Tracec(c,x)
 #  define Tracecv(c,x)
-#  define DBG_PUT(a,b)
+//#  define DBG_PUT(a,b)
 #endif
 /* internal data types */
 typedef unsigned char Byte;  /* 8 bits */
@@ -602,31 +605,31 @@ static int inflate_fast OF((
     z_streamp ));
 /******************************************************************************
 *
-* memcpy - copy memory
+* memcpy_vx - copy memory
 */ 
-static void memcpy
-    (
-    Byte * dest,
-    Byte * src,
-    uInt   nBytes
-    )
-    {
-    if ((((uInt)dest & 0x3) == 0) && (((uInt)src & 0x3) == 0))
+static void memcpy_vx
+(
+ Byte * dest,
+ Byte * src,
+ uInt   nBytes
+ )
 {
-while (nBytes >= 4)
+  if ((((uInt)dest & 0x3) == 0) && (((uInt)src & 0x3) == 0))
     {
-    *((uInt *)dest) = *((uInt *)src);
-    dest   += 4;
-    src    += 4;
-    nBytes -= 4;
+      while (nBytes >= 4)
+	{
+	  *((uInt *)dest) = *((uInt *)src);
+	  dest   += 4;
+	  src    += 4;
+	  nBytes -= 4;
+	}
+    }
+  while (nBytes > 0)
+    {
+      *dest++ = *src++;
+      nBytes--;
     }
 }
-    while (nBytes > 0)
-{
-*dest++ = *src++;
-nBytes--;
-}
-    }
 /******************************************************************************
 *
 * bzero - zeroes a buffer
@@ -696,116 +699,118 @@ s2 += s1;
 *
 */ 
 static ush cksum
-    (
-    ush prevSum, /* previous total */
-    const uch * buf, /* buffer to checksum */
-    ulg len /* size of buffer */
-    )
-    {
-    int doSwap = 0;
-    ulg sum = prevSum;
-    union
+(
+ ush prevSum, /* previous total */
+ const uch * buf, /* buffer to checksum */
+ ulg len /* size of buffer */
+ )
 {
-uch c[2];
-ush s;
-} shorty;
-    union
-{
-ush s[2];
-ulg l;
-} longy;
+  int doSwap = 0;
+  ulg sum = prevSum;
+  union
+  {
+    uch c[2];
+    ush s;
+  } shorty;
+  union
+  {
+    ush s[2];
+    ulg l;
+  } longy;
 #define REDUCE(x) {longy.l = x; x = longy.s[0] + longy.s[1];}
-    REDUCE(sum);
-    /* do the first byte now for misaligned buffers */
-    if ((int)buf & 1)
-{
-doSwap = 1;
-shorty.c[0] = 0;
-shorty.c[1] = *buf;
-buf++;
-len--;
-sum += shorty.s;
-}
-    /* do the rest two bytes at a time */
-    while (len > 1)
-{
-sum += *((ush *)buf);
-buf += 2;
-len -= 2;
-if ((len & 0xffff) == 0)
-    REDUCE(sum);
-}
-    /* add in the last byte if needed */
-    if (len == 1)
-{
-shorty.c[0] = *buf;
-shorty.c[1] = 0;
-sum += shorty.s;
-}
-    REDUCE(sum);
-    REDUCE(sum);
-    shorty.s = sum;
-    /* swap bytes if needed */
-    if (doSwap)
-{
-uch tmp;
-tmp = shorty.c[0];
-shorty.c[0] = shorty.c[1];
-shorty.c[1] = tmp;
-}
-    return (shorty.s);
+  REDUCE(sum);
+  /* do the first byte now for misaligned buffers */
+  if ((int)buf & 1)
+    {
+      doSwap = 1;
+      shorty.c[0] = 0;
+      shorty.c[1] = *buf;
+      buf++;
+      len--;
+      sum += shorty.s;
     }
+  /* do the rest two bytes at a time */
+  while (len > 1)
+    {
+      sum += *((ush *)buf);
+      buf += 2;
+      len -= 2;
+      if ((len & 0xffff) == 0)
+	REDUCE(sum);
+    }
+  /* add in the last byte if needed */
+  if (len == 1)
+    {
+      shorty.c[0] = *buf;
+      shorty.c[1] = 0;
+      sum += shorty.s;
+    }
+  REDUCE(sum);
+  REDUCE(sum);
+  shorty.s = sum;
+  /* swap bytes if needed */
+  if (doSwap)
+    {
+      uch tmp;
+      tmp = shorty.c[0];
+      shorty.c[0] = shorty.c[1];
+      shorty.c[1] = tmp;
+    }
+  return (shorty.s);
+}
 /******************************************************************************
-*
-* zcalloc - allocate memory
-*/ 
+ *
+ * zcalloc - allocate memory
+ */ 
 static voidp zcalloc
-    (
-    voidp opaque,
-    unsigned items,
-    unsigned size
-    )
-    {
-    voidp thisBlock = (voidp)nextBlock;
-    int nBytes = ROUND_UP (items * size);
-    if ((char *)thisBlock + nBytes + BLK_HDR_SIZE >= &buf[BUF_SIZE])
+(
+ voidp opaque,
+ unsigned items,
+ unsigned size
+ )
 {
-DBG_PUT ("zcalloc %d bytes: buffer overflow!n", nBytes);
-return (0);
-}
-    nextBlock = (char *)thisBlock + nBytes + BLK_HDR_SIZE;
-    BLK_HDRS_LINK (thisBlock, nextBlock);
-    return (thisBlock);
+  //printf("[*] Entering zcalloc with opaque = %p, items = %d, size = %d\n", );
+  voidp thisBlock = (voidp)nextBlock;
+  int nBytes = ROUND_UP (items * size);
+  if ((char *)thisBlock + nBytes + BLK_HDR_SIZE >= &buf[BUF_SIZE])
+    {
+      DBG_PUT ("[!] zcalloc %d bytes: buffer overflow!\n", nBytes);
+      return (0);
     }
+  nextBlock = (char *)thisBlock + nBytes + BLK_HDR_SIZE;
+  BLK_HDRS_LINK (thisBlock, nextBlock);
+  return (thisBlock);
+}
 /******************************************************************************
-*
-* zcfree - free memory
-*/ 
+ *
+ * zcfree - free memory
+ */ 
 static void  zcfree
-    (
-    voidp opaque,
-    voidp ptr
-    )
+(
+ voidp opaque,
+ voidp ptr
+ )
+{
+  return; // patched this function out
+  voidp thisBlock;
+  /* make sure block is valid */
+  if (!BLK_IS_VALID(ptr))
     {
-    voidp thisBlock;
-    /* make sure block is valid */
-    if (!BLK_IS_VALID(ptr))
-{
-DBG_PUT ("free at invalid address 0x%xn", ptr);
-return;
-}
-    /* mark block as free */
-    BLK_FREE_SET (ptr);
-    /* pop free blocks from the top of the stack */
-    for (thisBlock = (voidp)BLK_PREV(nextBlock);
- thisBlock != 0 && BLK_IS_FREE(thisBlock);
- thisBlock = (voidp)BLK_PREV(thisBlock))
-{
-nextBlock = thisBlock;
-BLK_NEXT(nextBlock) = 0;
-}
-    return;
+      DBG_PUT ("free at invalid address 0x%x\n", ptr);
+      return;
     }
+  /* mark block as free */
+  BLK_FREE_SET (ptr);
+  /* pop free blocks from the top of the stack */
+  for (thisBlock = (voidp)BLK_PREV(nextBlock);
+       thisBlock != 0 && BLK_IS_FREE(thisBlock);
+       thisBlock = (voidp)BLK_PREV(thisBlock))
+    {
+      nextBlock = thisBlock;
+      BLK_NEXT(nextBlock) = 0;
+    }
+  return;
+}
 /* normally stack variable for huft_build - but stack was too large */
 static uInt c[BMAX+1];             /* bit length count table */
 static inflate_huft *u[BMAX];      /* table stack */
@@ -1195,7 +1200,7 @@ r = Z_OK;
     if (s->checkfn != Z_NULL)
 z->adler = s->check = (*s->checkfn)(s->check, q, n);
     /* copy as far as end of window */
-    memcpy(p, q, n);
+    memcpy_vx(p, q, n);
     p += n;
     q += n;
     /* see if more to copy at beginning of window */
@@ -1218,7 +1223,7 @@ z->total_out += n;
 if (s->checkfn != Z_NULL)
     z->adler = s->check = (*s->checkfn)(s->check, q, n);
 /* copy */
-memcpy(p, q, n);
+memcpy_vx(p, q, n);
 p += n;
 q += n;
 }
@@ -1715,7 +1720,7 @@ int r;
       t = s->sub.left;
       if (t > n) t = n;
       if (t > m) t = m;
-      memcpy(q, p, t);
+      memcpy_vx(q, p, t);
       p += t;  n -= t;
       q += t;  m -= t;
       if ((s->sub.left -= t) != 0)
@@ -1933,11 +1938,11 @@ z_streamp z;
   return Z_OK;
 }
 /******************************************************************************
-*
-* inflateInit - initializes inflate
-*/ 
+ *
+ * inflateInit - initializes inflate
+ */ 
 static int inflateInit(z)
-z_streamp z;
+     z_streamp z;
 {
   int w = DEF_WBITS;
   /* initialize state */
@@ -1945,10 +1950,10 @@ z_streamp z;
     return Z_STREAM_ERROR;
   z->msg = Z_NULL;
   if (z->zalloc == Z_NULL)
-  {
-    z->zalloc = zcalloc;
-    z->opaque = (voidp)0;
-  }
+    {
+      z->zalloc = zcalloc;
+      z->opaque = (voidp)0;
+    }
   if (z->zfree == Z_NULL) z->zfree = zcfree;
   if ((z->state = (struct internal_state  *)
        ZALLOC(z,1,sizeof(struct internal_state))) == Z_NULL)
@@ -1957,25 +1962,25 @@ z_streamp z;
   /* handle undocumented nowrap option (no zlib header or check) */
   z->state->nowrap = 0;
   if (w < 0)
-  {
-    w = - w;
-    z->state->nowrap = 1;
-  }
+    {
+      w = - w;
+      z->state->nowrap = 1;
+    }
   /* set window size */
   if (w < 8 || w > 15)
-  {
-    inflateEnd(z);
-    return Z_STREAM_ERROR;
-  }
+    {
+      inflateEnd(z);
+      return Z_STREAM_ERROR;
+    }
   z->state->wbits = (uInt)w;
   /* create inflate_blocks state */
   if ((z->state->blocks =
-      inflate_blocks_new(z, z->state->nowrap ? Z_NULL : adler32, (uInt)1 << w))
+       inflate_blocks_new(z, z->state->nowrap ? Z_NULL : adler32, (uInt)1 << w))
       == Z_NULL)
-  {
-    inflateEnd(z);
-    return Z_MEM_ERROR;
-  }
+    {
+      inflateEnd(z);
+      return Z_MEM_ERROR;
+    }
   Trace((stderr, "inflate: allocatedn"));
   /* reset state */
   inflateReset(z);
@@ -2103,7 +2108,7 @@ break;
   }
 }
 /* global variables */
-int inflateCksum = 0; /* set to TRUE to validate compressed checksum */
+int inflateCksum = 1; /* set to TRUE to validate compressed checksum */
 /******************************************************************************
 *
 * inflate - inflate compressed code
@@ -2121,58 +2126,61 @@ int inflateCksum = 0; /* set to TRUE to validate compressed checksum */
 * RETURNS: OK or ERROR.
 */ 
 int inflate
-    (
-    Byte * src,
-    Byte * dest,
-    int nBytes
-    )
-    {
-    z_stream d_stream;   /* decompression stream */
-    int err;
-    /* we must initialize BSS variables since it's not done in bootInit */
-    fixed_built = 0;
-    fixed_bl = 0;
-    fixed_bd = 0;
-    fixed_tl = 0;
-    fixed_td = 0;
-    bzero ((char *)fixed_mem, sizeof (fixed_mem));
-    BLK_PREV(nextBlock) = 0; /* set first block's prev pointer */
-    /*
-     * Validate the compression stream.
-     * The first byte should be Z_DEFLATED, the last two a valid checksum.
-     */
-    if (*src != Z_DEFLATED)
+(
+ Byte * src,
+ Byte * dest,
+ int nBytes
+ )
 {
-DBG_PUT ("inflate error: *src = %d. not Z_DEFLATED datan", *src);
-return (-1);
-}
-    if (inflateCksum)
-{
-if (cksum (0, src, nBytes) != 0xffff)
+  z_stream d_stream;   /* decompression stream */
+  int err;
+  /* we must initialize BSS variables since it's not done in bootInit */
+  fixed_built = 0;
+  fixed_bl = 0;
+  fixed_bd = 0;
+  fixed_tl = 0;
+  fixed_td = 0;
+  bzero ((char *)fixed_mem, sizeof (fixed_mem));
+  BLK_PREV(nextBlock) = 0; /* set first block's prev pointer */
+  /*
+   * Validate the compression stream.
+   * The first byte should be Z_DEFLATED, the last two a valid checksum.
+   */
+  if (*src != Z_DEFLATED)
     {
-    DBG_PUT ("checksum error: 0x%x != 0xffffnn", 
-cksum (0, src, nBytes));
+      DBG_PUT ("[!] inflate error: *src = %d. not Z_DEFLATED data\n", *src);
+      return (-1);
+    }
+  if (inflateCksum)
+    {
+      if (cksum (0, src, nBytes) != 0xffff)
+	{
+	  DBG_PUT ("[!] checksum error: 0x%x != 0xffff\n", 
+		   cksum (0, src, nBytes));
+	  return (-1);
+	}
+      else {
+	printf("[*] Checksum == 0x%x...\n", cksum(0, src, nBytes));
+      }
+    }
+  src++;
+  nBytes -= 3;
+  /* do the decompression */
+  d_stream.zalloc = (alloc_func)0;
+  d_stream.zfree = (free_func)0;
+  d_stream.opaque = (voidp)0;
+  d_stream.next_in  = src;
+  d_stream.avail_in = nBytes;
+  d_stream.next_out = dest;
+  d_stream.avail_out = nBytes * 100;
+  if (inflateInit(&d_stream) != Z_OK)
     return (-1);
+  err = zinflate(&d_stream, 0);
+  if (err == Z_STREAM_END)
+    {
+      err = inflateEnd(&d_stream);
     }
+  if (err != Z_OK)
+    return (-1);
+  return (0);
 }
-    src++;
-    nBytes -= 3;
-    /* do the decompression */
-    d_stream.zalloc = (alloc_func)0;
-    d_stream.zfree = (free_func)0;
-    d_stream.opaque = (voidp)0;
-    d_stream.next_in  = src;
-    d_stream.avail_in = nBytes;
-    d_stream.next_out = dest;
-    d_stream.avail_out = nBytes * 100;
-    if (inflateInit(&d_stream) != Z_OK)
-return (-1);
-    err = zinflate(&d_stream, 0);
-    if (err == Z_STREAM_END)
-{
-err = inflateEnd(&d_stream);
-}
-    if (err != Z_OK)
-return (-1);
-    return (0);
-    }
