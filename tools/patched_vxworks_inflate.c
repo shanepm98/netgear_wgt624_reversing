@@ -769,8 +769,21 @@ static voidp zcalloc
  unsigned size
  )
 {
-  voidp thisBlock = (voidp)nextBlock;
+  // integer-align the allocation request
   int nBytes = ROUND_UP (items * size);
+
+  // allocate memory using normal malloc instead of original zcalloc routine.
+  voidp thisBlock = (voidp)malloc(nBytes);
+
+  // check for errors
+  if(thisBlock == NULL){
+    fprintf(stderr, "[!] Failed to allocate %d bytes using malloc. Exiting...", nBytes);
+    exit(-1);
+  }
+
+  // return ptr to allocated mem
+  return thisBlock;
+  /*
   printf("[*] Entering zcalloc with opaque = %p, items = %d, size = %d, thisBlock = %p, &buf[BUF_SIZE] == %p\n", opaque, items, size, thisBlock, &buf[BUF_SIZE]);
   if ((char *)thisBlock + nBytes + BLK_HDR_SIZE >= &buf[BUF_SIZE])
     {
@@ -780,6 +793,7 @@ static voidp zcalloc
   nextBlock = (char *)thisBlock + nBytes + BLK_HDR_SIZE;
   BLK_HDRS_LINK (thisBlock, nextBlock);
   return (thisBlock);
+  */
 }
 /******************************************************************************
  *
@@ -791,17 +805,21 @@ static void  zcfree
  voidp ptr
  )
 {
+
+  free(ptr);
+  return;
+  /*
   //  return; // patched this function out
   voidp thisBlock;
-  /* make sure block is valid */
+  
   if (!BLK_IS_VALID(ptr))
     {
       DBG_PUT ("free at invalid address 0x%x\n", ptr);
       return;
     }
-  /* mark block as free */
+  
   BLK_FREE_SET (ptr);
-  /* pop free blocks from the top of the stack */
+  
   for (thisBlock = (voidp)BLK_PREV(nextBlock);
        thisBlock != 0 && BLK_IS_FREE(thisBlock);
        thisBlock = (voidp)BLK_PREV(thisBlock))
@@ -810,6 +828,7 @@ static void  zcfree
       BLK_NEXT(nextBlock) = 0;
     }
   return;
+  */
 }
 /* normally stack variable for huft_build - but stack was too large */
 static uInt c[BMAX+1];             /* bit length count table */
@@ -1085,55 +1104,55 @@ static voidp falloc
 * inflate_trees_fixed - do something
 */ 
 static int inflate_trees_fixed
-    (
-    uInt * bl, /* literal desired/actual bit depth */
-    uInt * bd,     /* distance desired/actual bit depth */
-    inflate_huft ** tl, /* literal/length tree result */
-    inflate_huft ** td  /* distance tree result */
-    )
-    {
-    /* build fixed tables if not already (multiple overlapped executions ok) */
-    if (!fixed_built)
+(
+ uInt * bl, /* literal desired/actual bit depth */
+ uInt * bd,     /* distance desired/actual bit depth */
+ inflate_huft ** tl, /* literal/length tree result */
+ inflate_huft ** td  /* distance tree result */
+ )
 {
-int k;              /* temporary variable */
-unsigned *c = (unsigned *)zcalloc (0, 288, sizeof (unsigned));
-    /* length list for huft_build */
-z_stream z;         /* for falloc function */
-int f = FIXEDH;     /* number of hufts left in fixed_mem */
-/* set up fake z_stream for memory routines */
-z.zalloc = falloc;
-z.zfree = Z_NULL;
-z.opaque = (voidp)&f;
-/* literal table */
-for (k = 0; k < 144; k++)
-    c[k] = 8;
-for (; k < 256; k++)
-    c[k] = 9;
-for (; k < 280; k++)
-    c[k] = 7;
-        for (; k < 288; k++)
-    c[k] = 8;
-fixed_bl = 7;
-huft_build(c, 288, 257, cplens, cplext, &fixed_tl, &fixed_bl, &z);
-/* distance table */
-for (k = 0; k < 30; k++)
+  /* build fixed tables if not already (multiple overlapped executions ok) */
+  if (!fixed_built)
+    {
+      int k;              /* temporary variable */
+      unsigned *c = (unsigned *)zcalloc (0, 288, sizeof (unsigned));
+      /* length list for huft_build */
+      z_stream z;         /* for falloc function */
+      int f = FIXEDH;     /* number of hufts left in fixed_mem */
+      /* set up fake z_stream for memory routines */
+      z.zalloc = falloc;
+      z.zfree = Z_NULL;
+      z.opaque = (voidp)&f;
+      /* literal table */
+      for (k = 0; k < 144; k++)
+	c[k] = 8;
+      for (; k < 256; k++)
+	c[k] = 9;
+      for (; k < 280; k++)
+	c[k] = 7;
+      for (; k < 288; k++)
+	c[k] = 8;
+      fixed_bl = 7;
+      huft_build(c, 288, 257, cplens, cplext, &fixed_tl, &fixed_bl, &z);
+      /* distance table */
+      for (k = 0; k < 30; k++)
 #if CPU_FAMILY==MC680X0
-    ((volatile unsigned *)c)[k] = 5;
+	((volatile unsigned *)c)[k] = 5;
 #else
-    c[k] = 5;
+      c[k] = 5;
 #endif
-fixed_bd = 5;
-huft_build(c, 30, 0, cpdist, cpdext, &fixed_td, &fixed_bd, &z);
-/* done */
-fixed_built = 1;
-zcfree (0, c);
-}
-    *bl = fixed_bl;
-    *bd = fixed_bd;
-    *tl = fixed_tl;
-    *td = fixed_td;
-    return Z_OK;
+      fixed_bd = 5;
+      huft_build(c, 30, 0, cpdist, cpdext, &fixed_td, &fixed_bd, &z);
+      /* done */
+      fixed_built = 1;
+      zcfree (0, c);
     }
+  *bl = fixed_bl;
+  *bd = fixed_bd;
+  *tl = fixed_tl;
+  *td = fixed_td;
+  return Z_OK;
+}
 /******************************************************************************
 *
 * inflate_trees_free - frees inflate trees
