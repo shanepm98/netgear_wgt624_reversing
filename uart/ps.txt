@@ -1,0 +1,30 @@
+U12H05500 show> task
+
+  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+---------- ------------ -------- --- ---------- -------- -------- ------- -----
+tExcTask   excTask      80fcf2a0   0 PEND       80247820 80fcf198       0     0
+tLogTask   logTask      80fcc770   0 PEND       80247820 80fcc668  3d0001     0
+tTrapMon   apTrapMonTas 80f5ab00   1 DELAY      80229244 80f5a9e0       0   370
+tTxQueueTastTxQueueTask 80c97c50   1 DELAY      80229244 80c97be0       0    10
+NatUpateTimNatUpdateTim 80a7f950   1 DELAY      80229244 80a7f8d8       0    27
+tWlanCal   800b4d1c     80d02f80  10 PEND       80247820 80d02e78       0     0
+tDHCPS     acosDHCPServ 809d86f0  49 PEND       80247820 809d8570       0     0
+tNetTask   netTask      80f8d220  50 PEND       801adde0 80f8d168      3d     0
+tAEPoll    8001795c     80f5c130  50 DELAY      80229244 80f5c0a0       0   113
+tApHouseKeeapHouseKeepi 80ffadf0  50 DELAY      80229244 80ffad50       0  2148
+tCliExec   80118504     80c4aba0  51 READY      80229d90 80c49ad8       0     0
+tCliTask   80116318     80fe9850  51 PEND       801adde0 80fe9088   c0002     0
+tBdgAging  800e6d58     80d071a0  55 DELAY      80229244 80d07128       0   333
+tTffsPTask flPollTask   80fcae80 100 DELAY      80229244 80fcae10       0     3
+tTmSch     801904d8     80fe4630 100 PEND+T     801adde0 80fe45a8  3d0004   338
+tLogWrt    LogWrtTask   80a78100 100 PEND       80247820 80a77f80       0     0
+taskDbg    801aa910     80fd4850 200 PEND       80247820 80fd4658       0     0
+t_Http_D   http_d       80a72cc0 200 PEND+T     801adde0 80a72740  3d0004    23
+t_HttpdMU  http_MU      80a27aa0 200 PEND+T     801adde0 80a27790  3d0004    18
+abFtpc     abFtpcMain   80ff53f0 201 PEND       80247820 80ff4f80  6b0002     0
+tDcacheUpd dcacheUpd    80f67790 250 DELAY      80229244 80f676f8       0     3
+tMblkGC    800de354     80fef1b0 254 DELAY      80229244 80fef138       0     4
+tTelnetd0  abTelnetd0   80fedc00 254 PEND       801adde0 80fed368       0     0
+tRtcTask   800ddd70     80a756e0 254 PEND+T     801adde0 80a75678  6b0002 13495
+t_upnpd    upnp_init    80a22880 254 DELAY      80229244 80a22778       0    13
+tOneSec    oneSecTask   809d70d0 255 DELAY      80229244 809d7060       0     8

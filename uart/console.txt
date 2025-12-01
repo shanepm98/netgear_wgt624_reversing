@@ -1,0 +1,47 @@
+ar531xPlus rev 0x00000087 firmware startup...
+
+boardData checksum failed!
+
+
+Atheros AR5001AP default version 4.0.0.167
+
+
+ 0
+auto-booting...
+
+Attaching to TFFS... done.
+Loading /fl/APIMG1...
+Decompressing... /  OK.
+Starting at 0x80010000...
+
+/fl/  - Volume is OK                                
+Reading Configuration File "/fl/apcfg".
+Configuration file checksum: 583a9 is good
+Failed to attach to device aeAttaching interface lo0...done
+
+Adding 7521 symbols for standalone.
+call usrAcosPPTPClientInit!
+acosPPTPClientLibInit(): PPTP-v1.1.0, INIT OK!
+0x80fffdf0 (): task deadCan't attach unknown device ae (unit 0).
+tTxQueueTask: task started.
+-> wireless access point starting...
+wlan0 Ready
+Ready
+DNS redirect INIT
+in abRegisterInputHook inputPktHook: 800df2e8
+Calling dnsRedirect_hookAdd
+PPPoE: Ambit MuxHook 1.0
+PPP: DevName=ppp, unit=0
+*** Enable PPPoE Dial-on-demand ***
+IPCP dial on demand
+pppDemandHook recv from unit 0
+PPP: Recved an IP datagram. I am going to dial now
+*** Enable PPPoE Dial-on-demand ***
+IPCP dial on demand
+!Nat_PPTP_Initialize is called
+Info: No FWPT default policies.
+DHCPS: init dhcps: devname=mirror0
+DHCPS:Set the default Lease Time to 86400
+Set option ACOS_DHCP_OPT_ROUTER to 10.0.0.1:
+Set option ACOS_DHCP_OPT_DNS_SERVER to 10.0.0.1:
+Login: POT has reached the max value.
