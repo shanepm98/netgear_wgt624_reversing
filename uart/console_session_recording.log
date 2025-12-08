@@ -1,0 +1,1418 @@
+[!p[4l>[0m(B[37;40m[?1h=[H[2J[0m(B[37;41m[54;1H[K[?12l[?25h[?25l                                                                                                                                                                                              [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.10 | VT102 | Offline | ttyUSB0                                                                                                               [54;160H[?12l[?25h[1;1H
+[0m(B[37;40mWelcome to minicom 2.10
+
+OPTIONS: I18n 
+Compiled on Feb 24 2025, 22:01:05.
+Port /dev/ttyUSB0, 23:40:04 [U]
+
+Press CTRL-A Z for help on special keys
+
+
+HiZ>m
+1. HiZ
+2. 1-WIRE
+3. UART
+4. I2C
+5. SPI
+6. 2WIRE
+7. 3WIRE
+8. LCD
+9. DIO
+x. exit(without change)
+
+(1)>3
+Set serial port speed: (bps)
+ 1. 300
+ 2. 1200
+ 3. 2400
+ 4. 4800
+ 5. 9600
+ 6. 19200
+ 7. 38400
+ 8. 57600
+ 9. 115200
+10. BRG raw value
+
+(1)>5
+Data bits and parity:
+ 1. 8, NONE *default 
+ 2. 8, EVEN 
+ 3. 8, ODD 
+ 4. 9, NONE
+(1)>
+Stop bits:
+ 1. 1 *default
+ 2. 2
+(1)>
+Receive polarity:
+ 1. Idle 1 *default
+ 2. Idle 0
+(1)>
+Select output type:
+ 1. Open drain (H=Hi-Z, L=GND)
+ 2. Normal (H=3.3V, L=GND)[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H(1)>2[1;53r[53;1H
+[1;54r[53;1HReady[1;53r[53;1H
+[1;54r[53;1HUART>(0)[1;53r[53;1H
+[1;54r[53;1H 0.Macro menu[1;53r[53;1H
+[1;54r[53;1H 1.Transparent bridge[1;53r[53;1H
+[1;54r[53;1H 2. Live monitor[1;53r[53;1H
+[1;54r[53;1H 3.Bridge with flow control[1;53r[53;1H
+[1;54r[53;1HUART>(1)[1;53r[53;1H
+[1;54r[53;1HUART bridge[1;53r[53;1H
+[1;54r[53;1HReset to exit[1;53r[53;1H
+[1;54r[53;1HAre you sure? y[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Har531xPlus rev 0x00000087 firmware startup...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HboardData checksum failed![1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAtheros AR5001AP default version 4.0.0.167[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H 4 3 2 1 0[1;53r[53;1H
+[1;54r[53;1Hauto-booting...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAttaching to TFFS... done.[1;53r[53;1H
+[1;54r[53;1HLoading /fl/APIMG1...[1;53r[53;1H
+[1;54r[53;1HDecompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /  OK.[1;53r[53;1H
+[1;54r[53;1HStarting at 0x80010000...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H                                                    /fl/  - Volume is OK [1;53r[53;1H
+[1;54r[53;1HReading Configuration File "/fl/apcfg".[1;53r[53;1H
+[1;54r[53;1HConfiguration file checksum: 583ab is good[1;53r[53;1H
+[1;54r[53;1HFailed to attach to device aeAttaching interface lo0...done[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAdding 7521 symbols for standalone.[1;53r[53;1H
+[1;54r[53;1Hcall usrAcosPPTPClientInit![1;53r[53;1H
+[1;54r[53;1HacosPPTPClientLibInit(): PPTP-v1.1.0, INIT OK![1;53r[53;1H
+[1;54r[53;1H0x80fffdf0 (): task deadCan't attach unknown device ae (unit 0).[1;53r[53;1H
+[1;54r[53;1HtTxQueueTask: task started.[1;53r[53;1H
+[1;54r[53;1H-> wireless access point starting...[1;53r[53;1H
+[1;54r[53;1Hwlan0 Ready[1;53r[53;1H
+[1;54r[53;1HReady[1;53r[53;1H
+[1;54r[53;1HDNS redirect INIT[1;53r[53;1H
+[1;54r[53;1Hin abRegisterInputHook inputPktHook: 800df2e8[1;53r[53;1H
+[1;54r[53;1HCalling dnsRedirect_hookAdd[1;53r[53;1H
+[1;54r[53;1HPPPoE: Ambit MuxHook 1.0[1;53r[53;1H
+[1;54r[53;1HPPP: DevName=ppp, unit=0[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1HpppDemandHook recv from unit 0[1;53r[53;1H
+[1;54r[53;1HPPP: Recved an IP datagram. I am going to dial now[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1H!Nat_PPTP_Initialize is called[1;53r[53;1H
+[1;54r[53;1HInfo: No FWPT default policies.[1;53r[53;1H
+[1;54r[53;1HDHCPS: init dhcps: devname=mirror0[1;53r[53;1H
+[1;54r[53;1HDHCPS:Set the default Lease Time to 86400[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_ROUTER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_DNS_SERVER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HLogin: POT has reached the max value.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HLogin: Gearguy[1;53r[53;1H
+[1;54r[53;1HPassword: *******[1;53r[53;1H
+[1;54r[53;1HU12H05500> help[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HCommands are:[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hbridge         ddns           exit           ftpc           ip             [1;53r[53;1H
+[1;54r[53;1Hlan            nat            passwd         pot            reboot         [1;53r[53;1H
+[1;54r[53;1Hsave           show           sntp           time           uptime         [1;53r[53;1H
+[1;54r[53;1Hversion        wan            web            windsh         wla            [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H '..'[53;9H return to previous directory[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HU12H05500> windsh[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> ?[1;53r[53;1H
+[1;54r[53;1Hsyntax error[1;53r[53;1H
+[1;54r[53;1H-> help[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hhelp                           Print this list[1;53r[53;1H
+[1;54r[53;1HioHelp                         Print I/O utilities help info[1;53r[53;1H
+[1;54r[53;1HdbgHelp                        Print debugger help info[1;53r[53;1H
+[1;54r[53;1HnfsHelp                        Print nfs help info[1;53r[53;1H
+[1;54r[53;1HnetHelp                        Print network help info[1;53r[53;1H
+[1;54r[53;1HspyHelp                        Print task histogrammer help info[1;53r[53;1H
+[1;54r[53;1HtimexHelp                      Print execution timer help info[1;53r[53;1H
+[1;54r[53;1Hh         [n]                  Print (or set) shell history[1;53r[53;1H
+[1;54r[53;1Hi         [task]               Summary of tasks' TCBs[1;53r[53;1H
+[1;54r[53;1Hti        task                 Complete info on TCB for task[1;53r[53;1H
+[1;54r[53;1Hsp        adr,args...          Spawn a task, pri=100, opt=0, stk=20000[1;53r[53;1H
+[1;54r[53;1HtaskSpawn name,pri,opt,stk,adr,args... Spawn a task[1;53r[53;1H
+[1;54r[53;1Htd        task                 Delete a task[1;53r[53;1H
+[1;54r[53;1Hts        task                 Suspend a task[1;53r[53;1H
+[1;54r[53;1Htr        task                 Resume a task[1;53r[53;1H
+[1;54r[53;1Hd         [adr[,nunits[,width]]] Display memory[1;53r[53;1H
+[1;54r[53;1Hm         adr[,width]          Modify memory[1;53r[53;1H
+[1;54r[53;1HmRegs     [reg[,task]]         Modify a task's registers interactively[1;53r[53;1H
+[1;54r[53;1Hpc        [task]               Return task's program counter[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HType <CR> to continue, Q<CR> to stop: [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hiam       "user"[,"passwd"]  [53;33HSet user name and passwd[1;53r[53;1H
+[1;54r[53;1Hwhoami                         Print user name[1;53r[53;1H
+[1;54r[53;1Hdevs                           List devices[1;53r[53;1H
+[1;54r[53;1Hld        [syms[,noAbort][,"name"]] Load stdin, or file, into memory[1;53r[53;1H
+[1;54r[53;1H                               (syms = add symbols to table:[1;53r[53;1H
+[1;54r[53;1H                               -1 = none, 0 = globals, 1 = all)[1;53r[53;1H
+[1;54r[53;1Hlkup      ["substr"]         List symbols in system symbol table[1;53r[53;1H
+[1;54r[53;1HlkAddr    address              List symbol table entries near address[1;53r[53;1H
+[1;54r[53;1HcheckStack  [task]             List task stack sizes and usage[1;53r[53;1H
+[1;54r[53;1HprintErrno  value              Print the name of a status value[1;53r[53;1H
+[1;54r[53;1Hperiod    secs,adr,args... Spawn task to call function periodically[1;53r[53;1H
+[1;54r[53;1Hrepeat    n,adr,args...    Spawn task to call function n times (0=forever)[1;53r[53;1H
+[1;54r[53;1Hversion                        Print VxWorks version info, and boot line[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HNOTE:  Arguments specifying 'task' can be either task ID or name.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hvalue = 1 = 0x1[1;53r[53;1H
+[1;54r[53;1H-> devs[1;53r[53;1H
+[1;54r[53;1Hdrv name                [1;53r[53;1H
+[1;54r[53;1H  0 /null               [1;53r[53;1H
+[1;54r[53;1H  1 /tyCo/0             [1;53r[53;1H
+[1;54r[53;1H  2 /fl                 [1;53r[53;1H
+[1;54r[53;1H  5 bootHost:           [1;53r[53;1H
+[1;54r[53;1Hvalue = 25 = 0x19[1;53r[53;1H
+[1;54r[53;1H-> d[1;53r[53;1H
+[1;54r[53;1H00000000:  [1;53r[53;1H
+[1;54r[53;1HInstruction Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x8021e530[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0xb0800008[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d24, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a40, 80, 65)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a40, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: d (0, 2, 2, 0)[1;53r[53;1H
+[1;54r[53;1Hshell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> flash --layout[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: flash[1;53r[53;1H
+[1;54r[53;1H-> flash[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: flash[1;53r[53;1H
+[1;54r[53;1H-> dbgHelp[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HdbgHelp                         Print this list[1;53r[53;1H
+[1;54r[53;1HdbgInit                         Install debug facilities[1;53r[53;1H
+[1;54r[53;1Hb                               Display breakpoints and eventpoints[1;53r[53;1H
+[1;54r[53;1Hb         addr[,task[,count]]   Set breakpoint[1;53r[53;1H
+[1;54r[53;1He         addr[,eventNo[,task[,func[,arg]]]]] Set eventpoint[1;53r[53;1H
+[1;54r[53;1Hbd        addr[,task]           Delete breakpoint[1;53r[53;1H
+[1;54r[53;1Hbdall     [task]                Delete all breakpoints and eventpoints[1;53r[53;1H
+[1;54r[53;1Hc         [task[,addr[,addr1]]] Continue from breakpoint[1;53r[53;1H
+[1;54r[53;1Hcret      [task]                Continue to subroutine return[1;53r[53;1H
+[1;54r[53;1Hs         [task[,addr[,addr1]]] Single step[1;53r[53;1H
+[1;54r[53;1Hso        [task]                Single step/step over subroutine[1;53r[53;1H
+[1;54r[53;1Hl         [adr[,nInst]]         List disassembled memory[1;53r[53;1H
+[1;54r[53;1Htt        [task]                Do stack trace on task[1;53r[53;1H
+[1;54r[53;1Hbh addr[,access[,task[,count[,quiet]]]] Set hardware breakpoint[1;53r[53;1H
+[1;54r[53;1H        access :      1 - write            2 - read[1;53r[53;1H
+[1;54r[53;1H                      3 - read/write        For R4650 processors:[1;53r[53;1H
+[1;54r[53;1H        access :      0 - instruction      1 - write[1;53r[53;1H
+[1;54r[53;1H                      2 - read             3 - read/write[1;53r[53;1H
+[1;54r[53;1Hvalue = 293 = 0x125[1;53r[53;1H
+[1;54r[53;1H-> dbgInit[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> ioHelp[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: ioHelp[1;53r[53;1H
+[1;54r[53;1H-> nfsHelp[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: nfsHelp[1;53r[53;1H
+[1;54r[53;1H-> dbgHelp[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HdbgHelp                         Print this list[1;53r[53;1H
+[1;54r[53;1HdbgInit                         Install debug facilities[1;53r[53;1H
+[1;54r[53;1Hb                               Display breakpoints and eventpoints[1;53r[53;1H
+[1;54r[53;1Hb         addr[,task[,count]]   Set breakpoint[1;53r[53;1H
+[1;54r[53;1He         addr[,eventNo[,task[,func[,arg]]]]] Set eventpoint[1;53r[53;1H
+[1;54r[53;1Hbd        addr[,task]           Delete breakpoint[1;53r[53;1H
+[1;54r[53;1Hbdall     [task]                Delete all breakpoints and eventpoints[1;53r[53;1H
+[1;54r[53;1Hc         [task[,addr[,addr1]]] Continue from breakpoint[1;53r[53;1H
+[1;54r[53;1Hcret      [task]                Continue to subroutine return[1;53r[53;1H
+[1;54r[53;1Hs         [task[,addr[,addr1]]] Single step[1;53r[53;1H
+[1;54r[53;1Hso        [task]                Single step/step over subroutine[1;53r[53;1H
+[1;54r[53;1Hl         [adr[,nInst]]         List disassembled memory[1;53r[53;1H
+[1;54r[53;1Htt        [task]                Do stack trace on task[1;53r[53;1H
+[1;54r[53;1Hbh addr[,access[,task[,count[,quiet]]]] Set hardware breakpoint[1;53r[53;1H
+[1;54r[53;1H        access :      1 - write            2 - read[1;53r[53;1H
+[1;54r[53;1H                      3 - read/write        For R4650 processors:[1;53r[53;1H
+[1;54r[53;1H        access :      0 - instruction      1 - write[1;53r[53;1H
+[1;54r[53;1H                      2 - read             3 - read/write[1;53r[53;1H
+[1;54r[53;1Hvalue = 293 = 0x125[1;53r[53;1H
+[1;54r[53;1H-> netHelp[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HhostAdd   "hostname","inetaddr"    - add a host to remote host table;[1;53r[53;1H
+[1;54r[53;1H                                     "inetaddr" must be in standard[1;53r[53;1H
+[1;54r[53;1H                                     Internet address format e.g. "90.0.0.4"[1;53r[53;1H
+[1;54r[53;1HhostShow                           - print current remote host table[1;53r[53;1H
+[1;54r[53;1HnetDevCreate "devname","hostname",protocol[1;53r[53;1H
+[1;54r[53;1H                                   - create an I/O device to access files[1;53r[53;1H
+[1;54r[53;1H                                     on the specified host[1;53r[53;1H
+[1;54r[53;1H                                     (protocol 0=rsh, 1=ftp)[1;53r[53;1H
+[1;54r[53;1HrouteAdd     "destaddr","gateaddr" - add route to route table[1;53r[53;1H
+[1;54r[53;1HrouteDelete  "destaddr","gateaddr" - delete route from route table[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HrouteShow                          - print current route table[1;53r[53;1H
+[1;54r[53;1Hiam          "usr"[,"passwd"]      - specify the user name by which you[1;53r[53;1H
+[1;54r[53;1H                                     will be known to remote hosts[1;53r[53;1H
+[1;54r[53;1H                                     (and optional password)[1;53r[53;1H
+[1;54r[53;1Hwhoami                             - print the current remote ID[1;53r[53;1H
+[1;54r[53;1Hrlogin       "host"                - log in to a remote host;[1;53r[53;1H
+[1;54r[53;1H                                     "host" can be inet address or[1;53r[53;1H
+[1;54r[53;1H                                     host name in remote host table[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HType <CR> to continue, Q<CR> to stop: spyHJelp        [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HifShow       ["ifname"]            - show info about network interfaces[1;53r[53;1H
+[1;54r[53;1HinetstatShow                       - show all Internet protocol sockets[1;53r[53;1H
+[1;54r[53;1HtcpstatShow                        - show statistics for TCP[1;53r[53;1H
+[1;54r[53;1HudpstatShow                        - show statistics for UDP[1;53r[53;1H
+[1;54r[53;1HipstatShow                         - show statistics for IP[1;53r[53;1H
+[1;54r[53;1HicmpstatShow                       - show statistics for ICMP[1;53r[53;1H
+[1;54r[53;1HarptabShow                         - show a list of known ARP entries[1;53r[53;1H
+[1;54r[53;1HmbufShow                           - show mbuf statistics[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HEXAMPLE:   -> hostAdd "wrs", "90.0.0.2"[1;53r[53;1H
+[1;54r[53;1H           -> netDevCreate "wrs:", "wrs", 0[1;53r[53;1H
+[1;54r[53;1H           -> iam "fred"[1;53r[53;1H
+[1;54r[53;1H           -> copy <wrs:/etc/passwd   /* copy file from host "wrs" */[1;53r[53;1H
+[1;54r[53;1H           -> rlogin "wrs"            /* rlogin to host "wrs" */[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hvalue = 1 = 0x1[1;53r[53;1H
+[1;54r[53;1H-> spyHelp[1;53r[53;1H
+[1;54r[53;1Hspy not configured into this system.[1;53r[53;1H
+[1;54r[53;1Hvalue = 37 = 0x25 = '%'[1;53r[53;1H
+[1;54r[53;1H-> i[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY[1;53r[53;1H
+[1;54r[53;1H---------- ------------ -------- --- ---------- -------- -------- ------- -----[1;53r[53;1H
+[1;54r[53;1HtExcTask   excTask      80fcf2a0   0 PEND       80247820 80fcf198       0     0[1;53r[53;1H
+[1;54r[53;1HtLogTask   logTask      80fcc770   0 PEND       80247820 80fcc668  3d0001     0[1;53r[53;1H
+[1;54r[53;1HtTrapMon   apTrapMonTas 80f5ab00   1 DELAY      80229244 80f5a9e0       0   302[1;53r[53;1H
+[1;54r[53;1HtTxQueueTastTxQueueTask 80c97c50   1 DELAY      80229244 80c97be0       0     1[1;53r[53;1H
+[1;54r[53;1HNatUpateTimNatUpdateTim 80a7f950   1 DELAY      80229244 80a7f8d8       0    18[1;53r[53;1H
+[1;54r[53;1HtWlanCal   800b4d1c     80d02f80  10 PEND       80247820 80d02e78       0     0[1;53r[53;1H
+[1;54r[53;1HtShell     shell        80c84ba0  10 READY      80229d90 80c838d0       0     0[1;53r[53;1H
+[1;54r[53;1HtDHCPS     acosDHCPServ 809d86f0  49 PEND       80247820 809d8570       0     0[1;53r[53;1H
+[1;54r[53;1HtNetTask   netTask      80f8d220  50 PEND       801adde0 80f8d168      3d     0[1;53r[53;1H
+[1;54r[53;1HtAEPoll    8001795c     80f5c130  50 DELAY      80229244 80f5c0a0       0    40[1;53r[53;1H
+[1;54r[53;1HtApHouseKeeapHouseKeepi 80ffadf0  50 DELAY      80229244 80ffad50       0  1475[1;53r[53;1H
+[1;54r[53;1HtCliExec   80118504     80c4aba0  51 PEND       80247820 80c4a980       0     0[1;53r[53;1H
+[1;54r[53;1HtCliTask   80116318     80fe9850  51 DELAY      80229244 80fe91e0   30065    20[1;53r[53;1H
+[1;54r[53;1HtBdgAging  800e6d58     80d071a0  55 DELAY      80229244 80d07128       0   260[1;53r[53;1H
+[1;54r[53;1HtTffsPTask flPollTask   80fcae80 100 DELAY      80229244 80fcae10       0     6[1;53r[53;1H
+[1;54r[53;1HtTmSch     801904d8     80fe4630 100 PEND+T     801adde0 80fe45a8  3d0004  1465[1;53r[53;1H
+[1;54r[53;1HtLogWrt    LogWrtTask   80a78100 100 PEND       80247820 80a77f80       0     0[1;53r[53;1H
+[1;54r[53;1HtaskDbg    801aa910     80fd4850 200 PEND       80247820 80fd4658       0     0[1;53r[53;1H
+[1;54r[53;1Ht_Http_D   http_d       80a72cc0 200 PEND+T     801adde0 80a72740  3d0004    10[1;53r[53;1H
+[1;54r[53;1Ht_HttpdMU  http_MU      80a27aa0 200 PEND+T     801adde0 80a27790  3d0004     5[1;53r[53;1H
+[1;54r[53;1HabFtpc     abFtpcMain   80ff53f0 201 PEND       80247820 80ff4f80       0     0[1;53r[53;1H
+[1;54r[53;1HtDcacheUpd dcacheUpd    80f67790 250 DELAY      80229244 80f676f8       0     6[1;53r[53;1H
+[1;54r[53;1HtMblkGC    800de354     80fef1b0 254 DELAY      80229244 80fef138       0   231[1;53r[53;1H
+[1;54r[53;1HtTelnetd0  abTelnetd0   80fedc00 254 PEND       801adde0 80fed368       0     0[1;53r[53;1H
+[1;54r[53;1HtRtcTask   800ddd70     80a756e0 254 PEND+T     801adde0 80a75678  6b0002  6821[1;53r[53;1H
+[1;54r[53;1Ht_upnpd    upnp_init    80a22880 254 DELAY      80229244 80a22778       0   240[1;53r[53;1H
+[1;54r[53;1HtOneSec    oneSecTask   809d70d0 255 DELAY      80229244 809d7060       0    56[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> disasss emble shell[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: disassemble[1;53r[53;1H
+[1;54r[53;1H-> timexHelp[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: timexHelp[1;53r[53;1H
+[1;54r[53;1H-> iohelp[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: iohelp[1;53r[53;1H
+[1;54r[53;1H-> ioo  o[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: io[1;53r[53;1H
+[1;54r[53;1H-> d[1;53r[53;1H
+[1;54r[53;1H00000000:  [1;53r[53;1H
+[1;54r[53;1HInstruction Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x8021e530[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0xb0800008[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d24, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a40, 80, &yyact)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a40, ffffffff, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: d (0, 1, 1, 0)[1;53r[53;1H
+[1;54r[53;1Hshell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> l checks Stack[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY        TID     SIZE   CUR  HIGH  MARGIN[1;53r[53;1H
+[1;54r[53;1H------------ ------------ -------- ----- ----- ----- ------[1;53r[53;1H
+[1;54r[53;1HtExcTask     excTask      80fcf2a0  7984   264   976   7008 [1;53r[53;1H
+[1;54r[53;1HtLogTask     logTask      80fcc770  4992   264  1024   3968 [1;53r[53;1H
+[1;54r[53;1HtTrapMon     apTrapMonTas 80f5ab00 19984   288   416  19568 [1;53r[53;1H
+[1;54r[53;1HtTxQueueTask tTxQueueTask 80c97c50 19984   112   920  19064 [1;53r[53;1H
+[1;54r[53;1HNatUpateTime NatUpdateTim 80a7f950 19984   120   264  19720 [1;53r[53;1H
+[1;54r[53;1HtWlanCal     0x00800b4d1c 80d02f80  4080   264   464   3616 [1;53r[53;1H
+[1;54r[53;1HtShell       shell        80c84ba0 64848  1200  4552  60296 [1;53r[53;1H
+[1;54r[53;1HtDHCPS       acosDHCPServ 809d86f0  5104   384   480   4624 [1;53r[53;1H
+[1;54r[53;1HtNetTask     netTask      80f8d220 20464   184  3712  16752 [1;53r[53;1H
+[1;54r[53;1HtAEPoll      0x008001795c 80f5c130  4080   144   264   3816 [1;53r[53;1H
+[1;54r[53;1HtApHouseKeep apHouseKeepi 80ffadf0 19984   160   216  19768 [1;53r[53;1H
+[1;54r[53;1HtCliExec     0x0080118504 80c4aba0 32752   544   600  32152 [1;53r[53;1H
+[1;54r[53;1HtCliTask     0x0080116318 80fe9850 20464  1648  2368  18096 [1;53r[53;1H
+[1;54r[53;1HtBdgAging    0x00800e6d58 80d071a0 16368   120   248  16120 [1;53r[53;1H
+[1;54r[53;1HtTffsPTask   flPollTask   80fcae80  2032   112   312   1720 [1;53r[53;1H
+[1;54r[53;1HtTmSch       0x00801904d8 80fe4630  6128   136   584   5544 [1;53r[53;1H
+[1;54r[53;1HtLogWrt      LogWrtTask   80a78100 10224   384   440   9784 [1;53r[53;1H
+[1;54r[53;1HtaskDbg      0x00801aa910 80fd4850  2032   504   560   1472 [1;53r[53;1H
+[1;54r[53;1Ht_Http_D     http_d       80a72cc0 307184  1408 82104 225080 [1;53r[53;1H
+[1;54r[53;1Ht_HttpdMU    http_MU      80a27aa0 20464   784  1992  18472 [1;53r[53;1H
+[1;54r[53;1HabFtpc       abFtpcMain   80ff53f0 19792  1136  1416  18376 [1;53r[53;1H
+[1;54r[53;1HtDcacheUpd   dcacheUpd    80f67790  4992   152   744   4248 [1;53r[53;1H
+[1;54r[53;1HtMblkGC      0x00800de354 80fef1b0  4992   120   240   4752 [1;53r[53;1H
+[1;54r[53;1HtTelnetd0    abTelnetd0   80fedc00 10224  2200  2400   7824 [1;53r[53;1H
+[1;54r[53;1HtRtcTask     0x00800ddd70 80a756e0 10224   104  6296   3928 [1;53r[53;1H
+[1;54r[53;1Ht_upnpd      upnp_init    80a22880 98288   264  4784  93504 [1;53r[53;1H
+[1;54r[53;1HtOneSec      oneSecTask   809d70d0  2032   112   936   1096 [1;53r[53;1H
+[1;54r[53;1HINTERRUPT                           5008     0   920   4088 [1;53r[53;1H
+[1;54r[53;1Hvalue = 36 = 0x24 = '$'[1;53r[53;1H
+[1;54r[53;1H-> printErrno 3d0001[1;53r[53;1H
+[1;54r[53;1Hinvalid number: 3d[1;53r[53;1H
+[1;54r[53;1H-> printErrno 0x3d0001[1;53r[53;1H
+[1;54r[53;1HError status symbol table not included (errno = 0x3d0001).[1;53r[53;1H
+[1;54r[53;1Hvalue = 59 = 0x3b = ';'[1;53r[53;1H
+[1;54r[53;1H-> printErrno 4[1;53r[53;1H
+[1;54r[53;1HError status symbol table not included (errno = 0x4).[1;53r[53;1H
+[1;54r[53;1Hvalue = 54 = 0x36 = '6'[1;53r[53;1H
+[1;54r[53;1H-> version[1;53r[53;1H
+[1;54r[53;1HVxWorks (for Atheros AR5001AP default) version VxWorks5.4.2.[1;53r[53;1H
+[1;54r[53;1HKernel: WIND version 2.5.[1;53r[53;1H
+[1;54r[53;1HMade on Aug 21 2006, 16:56:10.[1;53r[53;1H
+[1;54r[53;1HBoot line:[1;53r[53;1H
+[1;54r[53;1Htffs:(0,0):/fl/APIMG1 e=192.168.1.20:0xffffff00 o=ae[1;53r[53;1H
+[1;54r[53;1Hvalue = 64 = 0x40 = '@'[1;53r[53;1H
+[1;54r[53;1H-> ls[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: ls[1;53r[53;1H
+[1;54r[53;1H-> cd[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: cd[1;53r[53;1H
+[1;54r[53;1H-> mkdir[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: mkdir[1;53r[53;1H
+[1;54r[53;1H-> devs[1;53r[53;1H
+[1;54r[53;1Hdrv name                [1;53r[53;1H
+[1;54r[53;1H  0 /null               [1;53r[53;1H
+[1;54r[53;1H  1 /tyCo/0             [1;53r[53;1H
+[1;54r[53;1H  2 /fl                 [1;53r[53;1H
+[1;54r[53;1H  5 bootHost:           [1;53r[53;1H
+[1;54r[53;1Hvalue = 25 = 0x19[1;53r[53;1H
+[1;54r[53;1H-> printLogo[1;53r[53;1H
+[1;54r[53;1H [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]][1;53r[53;1H
+[1;54r[53;1H      ]]]]]]]]]]]  ]]]]     ]]]]]]]]]]       ]]              ]]]]         (R)[1;53r[53;1H
+[1;54r[53;1H ]     ]]]]]]]]]  ]]]]]]     ]]]]]]]]       ]]               ]]]]            [1;53r[53;1H
+[1;54r[53;1H ]]     ]]]]]]]  ]]]]]]]]     ]]]]]] ]     ]]                ]]]]            [1;53r[53;1H
+[1;54r[53;1H ]]]     ]]]]] ]    ]]]  ]     ]]]] ]]]   ]]]]]]]]]  ]]]] ]] ]]]]  ]]   ]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]     ]]]  ]]    ]  ]]]     ]] ]]]]] ]]]]]]   ]] ]]]]]]] ]]]] ]]   ]]]]  [1;53r[53;1H
+[1;54r[53;1H ]]]]]     ]  ]]]]     ]]]]]      ]]]]]]]] ]]]]   ]] ]]]]    ]]]]]]]    ]]]] [1;53r[53;1H
+[1;54r[53;1H ]]]]]]      ]]]]]     ]]]]]]    ]  ]]]]]  ]]]]   ]] ]]]]    ]]]]]]]]    ]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]    ]]]]]  ]    ]]]]]]  ]    ]]]   ]]]]   ]] ]]]]    ]]]] ]]]]    ]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]  ]]]]]  ]]]    ]]]]]]]      ]     ]]]]]]]  ]]]]    ]]]]  ]]]] ]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]       Development System[1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]][1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]]       VxWorks version VxWorks5.4.2[1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]]       KERNEL: WIND version 2.5[1;53r[53;1H
+[1;54r[53;1H ]]]]]]]]]]]]]]]]]]]]]]]]]       Copyright Wind River Systems, Inc., 1984-2001[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hvalue = 1 = 0x1[1;53r[53;1H
+[1;54r[53;1H-> ll[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: ll[1;53r[53;1H
+[1;54r[53;1H-> ld[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HC80216aec shell          +1d4: shell (802b9560, 3, 80c74d24, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a40, 80, &yyact)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a40, ffffffff, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: ld (0, 1, 1, 0)[1;53r[53;1H
+[1;54r[53;1H8021e888 ld             +68 : loadModule (2ba89c, 3, 0, 1fe)[1;53r[53;1H
+[1;54r[53;1H80214f40 loadModule     +10 : loadModuleAt (0, 0, 8042d378, fffffffe)[1;53r[53;1H
+[1;54r[53;1H80214f6c loadModuleAt   +18 : loadModuleAtSym (80c848d8, &yy_yyv, 0, &yyval)[1;53r[53;1H
+[1;54r[53;1H80214fc8 loadModuleAtSym+48 : loadElfInit (0, 8, 0, 0)[1;53r[53;1H
+[1;54r[53;1H80214740 loadElfInit    +19e8: 80212ef4 (eeeeeeee, eeeeeeee, 80c847b7, 80fcfc90)[1;53r[53;1H
+[1;54r[53;1H80212f20 loadElfInit    +1c8: fioRead (80215060, eeeeeeee, 1, 802bb2a1)[1;53r[53;1H
+[1;54r[53;1H80201470 fioRead        +34 : read (0, 80c84698, 8020454c, 80205c44)[1;53r[53;1H
+[1;54r[53;1H8020450c read           +8  : iosRead (0, 80205d2c, 80c749e0, 3)[1;53r[53;1H
+[1;54r[53;1H80205adc iosRead        +c8 : tyRead (8020ed9c, 80c749e0, 80204dd8, 3)[1;53r[53;1H
+[1;54r[53;1H8020f468 tyRead         +50 : semTake (80fcfca4, ffffffff, 3, 3)[1;53r[53;1H
+[1;54r[53;1HtShell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> tyRead      iosRead[1;53r[53;1H
+[1;54r[53;1H(1, 1, 1, 3)[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> read(8020e802, 3)                 iosRead( (8020e808, 3)            8020ed9c, 80c749e0, 80204dd8, 3)[1;53r[53;1H
+[1;54r[53;1Hinvalid number: 8020e[1;53r[53;1H
+[1;54r[53;1H-> iosRead(0, 80205d2c, 80c749e0, 3)[1;53r[53;1H
+[1;54r[53;1Hinvalid number: 80205d[1;53r[53;1H
+[1;54r[53;1H-> spyrepor     Repoer  rt[1;53r[53;1H
+[1;54r[53;1Hspy not configured into this system.[1;53r[53;1H
+[1;54r[53;1Hvalue = 37 = 0x25 = '%'[1;53r[53;1H
+[1;54r[53;1H-> printErrno)  0x25[1;53r[53;1H
+[1;54r[53;1HError status symbol table not included (errno = 0x25).[1;53r[53;1H
+[1;54r[53;1Hvalue = 55 = 0x37 = '7'[1;53r[53;1H
+[1;54r[53;1H-> printErrno(0x25)[1;53r[53;1H
+[1;54r[53;1HError status symbol table not included (errno = 0x25).[1;53r[53;1H
+[1;54r[53;1Hvalue = 55 = 0x37 = '7'[1;53r[53;1H
+[1;54r[53;1H-> pc[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722912 = 0x801adde0 = semQPut + 0x190[1;53r[53;1H
+[1;54r[53;1H-> [1;53r[53;1H
+[1;54r[53;1H-> pc[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722912 = 0x801adde0 = semQPut + 0x190[1;53r[53;1H
+[1;54r[53;1H-> pc[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722912 = 0x801adde0 = semQPut + 0x190[1;53r[53;1H
+[1;54r[53;1H-> pc[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722912 = 0x801adde0 = semQPut + 0x190[1;53r[53;1H
+[1;54r[53;1H-> pc[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722912 = 0x801adde0 = semQPut + 0x190[1;53r[53;1H
+[1;54r[53;1H-> pwd[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: pwd[1;53r[53;1H
+[1;54r[53;1H-> dosl[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: dosl[1;53r[53;1H
+[1;54r[53;1H-> disk[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: disk[1;53r[53;1H
+[1;54r[53;1H-> diskfor   Fromat     ormat[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: diskFormat[1;53r[53;1H
+[1;54r[53;1H-> lsOld[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: lsOld[1;53r[53;1H
+[1;54r[53;1H-> lkup[1;53r[53;1H
+[1;54r[53;1HNumber of Symbols   : 7521      [1;53r[53;1H
+[1;54r[53;1HSymbol Mutex Id     : 0x80c92b88  [1;53r[53;1H
+[1;54r[53;1HSymbol Hash Id      : 0x80c92350  [1;53r[53;1H
+[1;54r[53;1HSymbol memPartId    : 0x8042cbc0  [1;53r[53;1H
+[1;54r[53;1HName Clash Policy   : Allowed   [1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> mRegs[1;53r[53;1H
+[1;54r[53;1H$0    : 00000000 - ^V80216aec shell          +1d4: shell (802b9560, 3, 80c74d24, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a40, 80, 11e)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a40, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: mRegs (0, 1, 1, 0)[1;53r[53;1H
+[1;54r[53;1H8021edb8 mRegs          +f8 : changeReg (8022bee0, 80c84701, 80c849d0, 800100ec)[1;53r[53;1H
+[1;54r[53;1H8021f244 changeReg      +e4 : fioRdString (802bb438, 802b1304, 0, 80c84724)[1;53r[53;1H
+[1;54r[53;1H80201524 fioRdString    +60 : read (80c846a0, 80c84ba0, ffffffff, 803f4fe8)[1;53r[53;1H
+[1;54r[53;1H8020450c read           +8  : iosRead (1, 0, 802b7c20, 13)[1;53r[53;1H
+[1;54r[53;1H80205adc iosRead        +c8 : tyRead (2bfe1c, 0, 8, ffffffff)[1;53r[53;1H
+[1;54r[53;1H8020f468 tyRead         +50 : semTake (80fcfca4, ffffffff, 1, 80fcfcc0)[1;53r[53;1H
+[1;54r[53;1HtShell[1;53r[53;1H
+[1;54r[53;1H restarted.[1;53r[53;1H
+[1;54r[53;1H-> tffsSgiw   howAll[1;53r[53;1H
+[1;54r[53;1HTFFS Version 2.2[1;53r[53;1H
+[1;54r[53;1H0: socket=RFA: type=0x0, unitSize=0x10000, mediaSize=0x1d0000[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> devs[1;53r[53;1H
+[1;54r[53;1Hdrv name                [1;53r[53;1H
+[1;54r[53;1H  0 /null               [1;53r[53;1H
+[1;54r[53;1H  1 /tyCo/0             [1;53r[53;1H
+[1;54r[53;1H  2 /fl                 [1;53r[53;1H
+[1;54r[53;1H  5 bootHost:           [1;53r[53;1H
+[1;54r[53;1Hvalue = 25 = 0x19[1;53r[53;1H
+[1;54r[53;1H-> l ls "/fl/: "[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: ls[1;53r[53;1H
+[1;54r[53;1H-> cmd[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: cmd[1;53r[53;1H
+[1;54r[53;1H-> opendir("/fl/"_ )[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134423264 = 0x80c74920[1;53r[53;1H
+[1;54r[53;1H-> readdir(0x80c74920)[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134423256 = 0x80c74928[1;53r[53;1H
+[1;54r[53;1H-> stat) ("/fl/")[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HData Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x801ad54c[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0x1080000c[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d24, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a40, 80, cc)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a40, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: stat (0, 8, 10, 0)[1;53r[53;1H
+[1;54r[53;1H801ff108 stat           +30 : fstat (29000010, 10, 8042cbc0, 18)[1;53r[53;1H
+[1;54r[53;1H801ff0c4 fstat          +c  : ioctl (1, &yyval, 3, 3)[1;53r[53;1H
+[1;54r[53;1H80204544 ioctl          +8  : iosIoctl (5f66756e, 635f7461, 80f66330, 67735368)[1;53r[53;1H
+[1;54r[53;1H80205d24 iosIoctl       +110: dosFsVolIsFat12 (802436d8, 5, 80c848d8, &yy_yyv)[1;53r[53;1H
+[1;54r[53;1H8014c460 dosFsVolIsFat12+33d0: 8014b128 (80c848e8, 0, 0, 80466cd0)[1;53r[53;1H
+[1;54r[53;1H8014b154 dosFsVolIsFat12+20c4: bzero (45, &yyval, &yypact, 0)[1;53r[53;1H
+[1;54r[53;1H802207d0 bzero          +8  : bfill (0, 0, 80c74900, 80466cd0)[1;53r[53;1H
+[1;54r[53;1HTask tShell is dead[1;53r[53;1H
+[1;54r[53;1H801ab310 excStub        +13c: excExcHandle (0, 0, 802076c0, 8014a04c)[1;53r[53;1H
+[1;54r[53;1H801abd64 excExcHandle   +160: sigPendDestroy (0, 0, 23248, &dcacheCtrl)[1;53r[53;1H
+[1;54r[53;1H8020bb50 sigPendDestroy +2cc: 8020baa0 (10, 10, 8042cbc0, 18)[1;53r[53;1H
+[1;54r[53;1H8020baf4 sigPendDestroy +270: sigPendKill (80c74900, 16, 80c846c8, 80f7f558)[1;53r[53;1H
+[1;54r[53;1H8020b850 sigPendKill    +110: 8020b394 (0, 80f68168, &dcacheCtrl, 0)[1;53r[53;1H
+[1;54r[53;1H8020b704 sigqueue       +a08: 8020af40 (80152320, 80f87ec0, 16, 80f7f558)[1;53r[53;1H
+[1;54r[53;1H8020b070 sigqueue       +374: shellRestart (80150680, eeeeeeee, 80153954, 801538f0)[1;53r[53;1H
+[1;54r[53;1H80216900 shellRestart   +104: taskSuspend (802b9530, 0, 0, 0)[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY[1;53r[53;1H
+[1;54r[53;1H---------- ------------ -------- --- ---------- -------- -------- ------- -----[1;53r[53;1H
+[1;54r[53;1HtShell     shell        80c84ba0  10 SUSPEND    802283e4 80c84380  1c0001     0[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hstack: base 0x80c84ba0  end 0x80c74ba0  size 64848  high 4464   margin 60384[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hoptions: 0xe[1;53r[53;1H
+[1;54r[53;1HVX_UNBREAKABLE      VX_DEALLOC_STACK    VX_FP_TASK          [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H$0    =        0   t0    =        0   s0    = 80c84ba0   t8    =        0[1;53r[53;1H
+[1;54r[53;1Hat    =        0   t1    =        0   s1    = 80c84ba0   t9    =        0[1;53r[53;1H
+[1;54r[53;1Hv0    =        0   t2    =        0   s2    = 80c74c28   k0    =        0[1;53r[53;1H
+[1;54r[53;1Hv1    =        0   t3    =        0   s3    = 80c84470   k1    =        0[1;53r[53;1H
+[1;54r[53;1Ha0    =        1   t4    =        0   s4    =       78   gp    = 804228f0[1;53r[53;1H
+[1;54r[53;1Ha1    =        0   t5    =        0   s5    =      200   sp    = 80c84380[1;53r[53;1H
+[1;54r[53;1Ha2    =        0   t6    =        0   s6    = 80c84ba0   s8    =        0[1;53r[53;1H
+[1;54r[53;1Ha3    =        0   t7    =        0   s7    =        1   ra    =        0[1;53r[53;1H
+[1;54r[53;1Hdivlo =        0   divhi =        0   sr    = 10009c01   pc    = 802283e4[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAP software 4.1.4.18[1;53r[53;1H
+[1;54r[53;1Hpanic: trapmon detected a fatal error[1;53r[53;1H
+[1;54r[53;1HRebooting AP...[1;53r[53;1H
+[1;54r[53;1Har531x watchdog: missed soft update 0x00023888 > 0x00023876[1;53r[53;1H
+[1;54r[53;1Har531x watchdog: missed soft update 0x000238c3 > 0x00023876[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Har531xPlus rev 0x00000087 firmware startup...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HboardData checksum failed![1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAtheros AR5001AP default version 4.0.0.167[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H 4 3 2 1 0[1;53r[53;1H
+[1;54r[53;1Hauto-booting...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAttaching to TFFS... done.[1;53r[53;1H
+[1;54r[53;1HLoading /fl/APIMG1...[1;53r[53;1H
+[1;54r[53;1HDecompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /  OK.[1;53r[53;1H
+[1;54r[53;1HStarting at 0x80010000...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H                                                    /fl/  - Volume is OK [1;53r[53;1H
+[1;54r[53;1HReading Configuration File "/fl/apcfg".[1;53r[53;1H
+[1;54r[53;1HConfiguration file checksum: 583ab is good[1;53r[53;1H
+[1;54r[53;1HFailed to attach to device aeAttaching interface lo0...done[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAdding 7521 symbols for standalone.[1;53r[53;1H
+[1;54r[53;1Hcall usrAcosPPTPClientInit![1;53r[53;1H
+[1;54r[53;1HacosPPTPClientLibInit(): PPTP-v1.1.0, INIT OK![1;53r[53;1H
+[1;54r[53;1H0x80fffdf0 (): task deadCan't attach unknown device ae (unit 0).[1;53r[53;1H
+[1;54r[53;1HtTxQueueTask: task started.[1;53r[53;1H
+[1;54r[53;1H-> wireless access point starting...[1;53r[53;1H
+[1;54r[53;1Hwlan0 Ready[1;53r[53;1H
+[1;54r[53;1HReady[1;53r[53;1H
+[1;54r[53;1HDNS redirect INIT[1;53r[53;1H
+[1;54r[53;1Hin abRegisterInputHook inputPktHook: 800df2e8[1;53r[53;1H
+[1;54r[53;1HCalling dnsRedirect_hookAdd[1;53r[53;1H
+[1;54r[53;1HPPPoE: Ambit MuxHook 1.0[1;53r[53;1H
+[1;54r[53;1HPPP: DevName=ppp, unit=0[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1HpppDemandHook recv from unit 0[1;53r[53;1H
+[1;54r[53;1HPPP: Recved an IP datagram. I am going to dial now[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1HpppDemandHook recv from unit 0[1;53r[53;1H
+[1;54r[53;1HPPP: Recved an IP datagram. I am going to dial now[1;53r[53;1H
+[1;54r[53;1H!Nat_PPTP_Initialize is called[1;53r[53;1H
+[1;54r[53;1HInfo: No FWPT default policies.[1;53r[53;1H
+[1;54r[53;1HDHCPS: init dhcps: devname=mirror0[1;53r[53;1H
+[1;54r[53;1HDHCPS:Set the default Lease Time to 86400[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_ROUTER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_DNS_SERVER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HLogin: POT has reached the max value.[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HLogin: root[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HLogin incorrect[1;53r[53;1H
+[1;54r[53;1HLogin: Gearguy[1;53r[53;1H
+[1;54r[53;1HPassword: *******[1;53r[53;1H
+[1;54r[53;1HU12H05500> windsh[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> stat("/fl/apcfg")[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HData Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x801ad54c[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0x1080000c[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d04, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a20, 80, 47)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (8042cd90, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: stat (eeeeeeee, eeeeeeee, 10, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H801ff108 stat           +30 : fstat (29000010, 10, 8042cbc0, 18)[1;53r[53;1H
+[1;54r[53;1H801ff0c4 fstat          +c  : ioctl (1, &yyval, 3, 3)[1;53r[53;1H
+[1;54r[53;1H80204544 ioctl          +8  : iosIoctl (5f66756e, 635f7461, 80f66330, 67735368)[1;53r[53;1H
+[1;54r[53;1H80205d24 iosIoctl       +110: dosFsVolIsFat12 (802436d8, 5, 80c848b8, &yy_yyv)[1;53r[53;1H
+[1;54r[53;1H8014c460 dosFsVolIsFat12+33d0: 8014b128 (80c848c8, 0, 0, 80466cd0)[1;53r[53;1H
+[1;54r[53;1H8014b154 dosFsVolIsFat12+20c4: bzero (45, &yyval, &yypact, 0)[1;53r[53;1H
+[1;54r[53;1H802207d0 bzero          +8  : bfill (0, 0, 80ffb0b0, 80466cd0)[1;53r[53;1H
+[1;54r[53;1HTask tShell is dead[1;53r[53;1H
+[1;54r[53;1H801ab310 excStub        +13c: excExcHandle (0, 0, 802076c0, 8014a04c)[1;53r[53;1H
+[1;54r[53;1H801abd64 excExcHandle   +160: sigPendDestroy (0, 0, cb3, &dcacheCtrl)[1;53r[53;1H
+[1;54r[53;1H8020bb50 sigPendDestroy +2cc: 8020baa0 (10, 10, 8042cbc0, 18)[1;53r[53;1H
+[1;54r[53;1H8020baf4 sigPendDestroy +270: sigPendKill (80ffb0b0, 1d, 80c846a8, 80f7f558)[1;53r[53;1H
+[1;54r[53;1H8020b850 sigPendKill    +110: 8020b394 (80c846d1, 58180, 0, 0)[1;53r[53;1H
+[1;54r[53;1H8020b704 sigqueue       +a08: 8020af40 (0, 40, 0, 0)[1;53r[53;1H
+[1;54r[53;1H8020b070 sigqueue       +374: shellRestart (80c84408, eeeeeeee, 80f65de0, 8014e058)[1;53r[53;1H
+[1;54r[53;1H80216900 shellRestart   +104: taskSuspend (802b9530, 0, 0, 0)[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY[1;53r[53;1H
+[1;54r[53;1H---------- ------------ -------- --- ---------- -------- -------- ------- -----[1;53r[53;1H
+[1;54r[53;1HtShell     shell        80c84b80  10 SUSPEND    802283e4 80c84360  1c0001     0[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hstack: base 0x80c84b80  end 0x80c74b80  size 64848  high 4464   margin 60384[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hoptions: 0xe[1;53r[53;1H
+[1;54r[53;1HVX_UNBREAKABLE      VX_DEALLOC_STACK    VX_FP_TASK          [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H$0    =        0   t0    =        0   s0    = 80c84b80   t8    =        0[1;53r[53;1H
+[1;54r[53;1Hat    =        0   t1    =        0   s1    = 80c84b80   t9    =        0[1;53r[53;1H
+[1;54r[53;1Hv0    =        0   t2    =        0   s2    = 80c74c08   k0    =        0[1;53r[53;1H
+[1;54r[53;1Hv1    =        0   t3    =        0   s3    = 80c84450   k1    =        0[1;53r[53;1H
+[1;54r[53;1Ha0    =        1   t4    =        0   s4    =       78   gp    = 804228f0[1;53r[53;1H
+[1;54r[53;1Ha1    =        0   t5    =        0   s5    =      200   sp    = 80c84360[1;53r[53;1H
+[1;54r[53;1Ha2    =        0   t6    =        0   s6    = 80c84b80   s8    =        0[1;53r[53;1H
+[1;54r[53;1Ha3    =        0   t7    =        0   s7    =        1   ra    =        0[1;53r[53;1H
+[1;54r[53;1Hdivlo =        0   divhi =        7   sr    = 10009c01   pc    = 802283e4[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAP software 4.1.4.18[1;53r[53;1H
+[1;54r[53;1Hpanic: trapmon detected a fatal error[1;53r[53;1H
+[1;54r[53;1HRebooting AP...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HboardData checksum failed![1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H 1 0[1;53r[53;1H
+[1;54r[53;1Hauto-booting...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAttaching to TFFS... done.[1;53r[53;1H
+[1;54r[53;1HLoading /fl/APIMG1...[1;53r[53;1H
+[1;54r[53;1HDecompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /Decompressing... -Decompressing... \Decompressing... /  OK.[1;53r[53;1H
+[1;54r[53;1HStarting at 0x80010000...[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H                                                    /fl/  - Volume is OK [1;53r[53;1H
+[1;54r[53;1HReading Configuration File "/fl/apcfg".[1;53r[53;1H
+[1;54r[53;1HConfiguration file checksum: 583ab is good[1;53r[53;1H
+[1;54r[53;1HFailed to attach to device aeAttaching interface lo0...done[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HAdding 7521 symbols for standalone.[1;53r[53;1H
+[1;54r[53;1Hcall usrAcosPPTPClientInit![1;53r[53;1H
+[1;54r[53;1HacosPPTPClientLibInit(): PPTP-v1.1.0, INIT OK![1;53r[53;1H
+[1;54r[53;1H0x80fffdf0 (): task deadCan't attach unknown device ae (unit 0).[1;53r[53;1H
+[1;54r[53;1HtTxQueueTask: task started.[1;53r[53;1H
+[1;54r[53;1H-> wireless access point starting...[1;53r[53;1H
+[1;54r[53;1Hwlan0 Ready[1;53r[53;1H
+[1;54r[53;1HReady[1;53r[53;1H
+[1;54r[53;1HDNS redirect INIT[1;53r[53;1H
+[1;54r[53;1Hin abRegisterInputHook inputPktHook: 800df2e8[1;53r[53;1H
+[1;54r[53;1HCalling dnsRedirect_hookAdd[1;53r[53;1H
+[1;54r[53;1HPPPoE: Ambit MuxHook 1.0[1;53r[53;1H
+[1;54r[53;1HPPP: DevName=ppp, unit=0[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1HpppDemandHook recv from unit 0[1;53r[53;1H
+[1;54r[53;1HPPP: Recved an IP datagram. I am going to dial now[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1HpppDemandHook recv from unit 0[1;53r[53;1H
+[1;54r[53;1HPPP: Recved an IP datagram. I am going to dial now[1;53r[53;1H
+[1;54r[53;1H!Nat_PPTP_Initialize is called[1;53r[53;1H
+[1;54r[53;1HInfo: No FWPT default policies.[1;53r[53;1H
+[1;54r[53;1HDHCPS: init dhcps: devname=mirror0[1;53r[53;1H
+[1;54r[53;1HDHCPS:Set the default Lease Time to 86400[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_ROUTER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HSet option ACOS_DHCP_OPT_DNS_SERVER to 10.0.0.1:[1;53r[53;1H
+[1;54r[53;1HLogin: POT has reached the max value.[1;53r[53;1H
+[1;54r[53;1H*** Enable PPPoE Dial-on-demand ***[1;53r[53;1H
+[1;54r[53;1HIPCP dial on demand[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HLogin: Geard guiy  y[1;53r[53;1H
+[1;54r[53;1HPassword: *******[1;53r[53;1H
+[1;54r[53;1HU12H05500> open("/fl/apcfg' ")[1;53r[53;1H
+[1;54r[53;1Hopen("/fl/apcfg") : Command not found.[1;53r[53;1H
+[1;54r[53;1HU12H05500> opendir("/fl/")[1;53r[53;1H
+[1;54r[53;1Hopendir("/fl/") : Command not found.[1;53r[53;1H
+[1;54r[53;1HU12H05500> cmd[1;53r[53;1H
+[1;54r[53;1Hcmd : Command not found.[1;53r[53;1H
+[1;54r[53;1HU12H05500> opendir("/fl/")[1;53r[53;1H
+[1;54r[53;1Hopendir("/fl/") : Command not found.[1;53r[53;1H
+[1;54r[53;1HU12H05500> help[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HCommands are:[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hbridge         ddns           exit           ftpc           ip             [1;53r[53;1H
+[1;54r[53;1Hlan            nat            passwd         pot            reboot         [1;53r[53;1H
+[1;54r[53;1Hsave           show           sntp           time           uptime         [1;53r[53;1H
+[1;54r[53;1Hversion        wan            web            windsh         wla            [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H '..'[53;9H return to previous directory[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HU12H05500> windsh[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> opendir("/fl/")[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134422784 = 0x80c74b00[1;53r[53;1H
+[1;54r[53;1H-> readdir(0x80c74b00)[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134422776 = 0x80c74b08[1;53r[53;1H
+[1;54r[53;1H-> help[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hhelp                           Print this list[1;53r[53;1H
+[1;54r[53;1HioHelp                         Print I/O utilities help info[1;53r[53;1H
+[1;54r[53;1HdbgHelp                        Print debugger help info[1;53r[53;1H
+[1;54r[53;1HnfsHelp                        Print nfs help info[1;53r[53;1H
+[1;54r[53;1HnetHelp                        Print network help info[1;53r[53;1H
+[1;54r[53;1HspyHelp                        Print task histogrammer help info[1;53r[53;1H
+[1;54r[53;1HtimexHelp                      Print execution timer help info[1;53r[53;1H
+[1;54r[53;1Hh         [n]                  Print (or set) shell history[1;53r[53;1H
+[1;54r[53;1Hi         [task]               Summary of tasks' TCBs[1;53r[53;1H
+[1;54r[53;1Hti        task                 Complete info on TCB for task[1;53r[53;1H
+[1;54r[53;1Hsp        adr,args...          Spawn a task, pri=100, opt=0, stk=20000[1;53r[53;1H
+[1;54r[53;1HtaskSpawn name,pri,opt,stk,adr,args... Spawn a task[1;53r[53;1H
+[1;54r[53;1Htd        task                 Delete a task[1;53r[53;1H
+[1;54r[53;1Hts        task                 Suspend a task[1;53r[53;1H
+[1;54r[53;1Htr        task                 Resume a task[1;53r[53;1H
+[1;54r[53;1Hd         [adr[,nunits[,width]]] Display memory[1;53r[53;1H
+[1;54r[53;1Hm         adr[,width]          Modify memory[1;53r[53;1H
+[1;54r[53;1HmRegs     [reg[,task]]         Modify a task's registers interactively[1;53r[53;1H
+[1;54r[53;1Hpc        [task]               Return task's program counter[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HType <CR> to continue, Q<CR> to stop: d 0x80c74b08, 10[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hiam       "user"[,"passwd"]  [53;33HSet user name and passwd[1;53r[53;1H
+[1;54r[53;1Hwhoami                         Print user name[1;53r[53;1H
+[1;54r[53;1Hdevs                           List devices[1;53r[53;1H
+[1;54r[53;1Hld        [syms[,noAbort][,"name"]] Load stdin, or file, into memory[1;53r[53;1H
+[1;54r[53;1H                               (syms = add symbols to table:[1;53r[53;1H
+[1;54r[53;1H                               -1 = none, 0 = globals, 1 = all)[1;53r[53;1H
+[1;54r[53;1Hlkup      ["substr"]         List symbols in system symbol table[1;53r[53;1H
+[1;54r[53;1HlkAddr    address              List symbol table entries near address[1;53r[53;1H
+[1;54r[53;1HcheckStack  [task]             List task stack sizes and usage[1;53r[53;1H
+[1;54r[53;1HprintErrno  value              Print the name of a status value[1;53r[53;1H
+[1;54r[53;1Hperiod    secs,adr,args... Spawn task to call function periodically[1;53r[53;1H
+[1;54r[53;1Hrepeat    n,adr,args...    Spawn task to call function n times (0=forever)[1;53r[53;1H
+[1;54r[53;1Hversion                        Print VxWorks version info, and boot line[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HNOTE:  Arguments specifying 'task' can be either task ID or name.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hvalue = 1 = 0x1[1;53r[53;1H
+[1;54r[53;1H-> d 0x80c74b08,10[1;53r[53;1H
+[1;54r[53;1H80c74b00:                      6170 6366 6700 0000   *        apcfg...*[1;53r[53;1H
+[1;54r[53;1H80c74b10:  0000 0000 0000 0000 0000 0000             *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> 0x80c74b08,           d 0x80c74b08. ,100[1;53r[53;1H
+[1;54r[53;1H80c74b00:                      6170 6366 6700 0000   *        apcfg...*[1;53r[53;1H
+[1;54r[53;1H80c74b10:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b20:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b30:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b40:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b50:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b60:  0000 0000 0000 0000 0000 0000 eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b70:  80c7 4af0 0001 0220 eeee eeee eeee eeee   *..J.... ........*[1;53r[53;1H
+[1;54r[53;1H80c74b80:  7453 6865 6c6c 00ee eeee eeee eeee eeee   *tShell..........*[1;53r[53;1H
+[1;54r[53;1H80c74b90:  0000 0000 0000 0000 0000 0000 8021 6888   *.............!h.*[1;53r[53;1H
+[1;54r[53;1H80c74ba0:  0000 0000 0000 0000 8021 6888 0000 0000   *.........!h.....*[1;53r[53;1H
+[1;54r[53;1H80c74bb0:  0000 0000 8021 6888 0000 0000 0000 0000   *.....!h.........*[1;53r[53;1H
+[1;54r[53;1H80c74bc0:  8021 6888 0000 0000 0000 0000 8021 6888   *.!h..........!h.*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> readdir       readdir0)[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: readdir0[1;53r[53;1H
+[1;54r[53;1H-> readdi00)         readdir(0x80c74b00)[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134422776 = 0x80c74b08[1;53r[53;1H
+[1;54r[53;1H-> d 0x80c,10        0x80    0x80c74b08,10[1;53r[53;1H
+[1;54r[53;1H80c74b00:                      4e56 5241 4d00 2020   *        NVRAM.  *[1;53r[53;1H
+[1;54r[53;1H80c74b10:  2000 0000 0000 0000 0000 0000             * ...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c74b08), 10   10[1;53r[53;1H
+[1;54r[53;1H80c74b10:                                0000 0000   *              ..*[1;53r[53;1H
+[1;54r[53;1H80c74b20:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> readdir(0x80c74b08)           0x80c74b00                  d readdir(0x80c74b00),10[1;53r[53;1H
+[1;54r[53;1H80c74b00:                      6170 696d 6731 0020   *        apimg1. *[1;53r[53;1H
+[1;54r[53;1H80c74b10:  2000 0000 0000 0000 0000 0000             * ...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readxb0       readdir() 0x80c74b00),  10[1;53r[53;1H
+[1;54r[53;1H80c74b00:                      6170 6366 672e 6261   *        apcfg.ba*[1;53r[53;1H
+[1;54r[53;1H80c74b10:  6b00 0000 0000 0000 0000 0000             *k...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c74b00),  10[1;53r[53;1H
+[1;54r[53;1H80c74b10:                                0000 0000   *              ..*[1;53r[53;1H
+[1;54r[53;1H80c74b20:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c74b00),10[1;53r[53;1H
+[1;54r[53;1H80c74b30:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74b40:  0000 0000                                 *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> devs[1;53r[53;1H
+[1;54r[53;1Hdrv name                [1;53r[53;1H
+[1;54r[53;1H  0 /null               [1;53r[53;1H
+[1;54r[53;1H  1 /tyCo/0             [1;53r[53;1H
+[1;54r[53;1H  2 /fl                 [1;53r[53;1H
+[1;54r[53;1H  5 bootHost:           [1;53r[53;1H
+[1;54r[53;1Hvalue = 25 = 0x19[1;53r[53;1H
+[1;54r[53;1H-> opendir("t /tyCo"               cer  reate ("/fl/test")[1;53r[53;1H
+[1;54r[53;1Hvalue = 11 = 0xb[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c74b00),10[1;53r[53;1H
+[1;54r[53;1H80c74b40:            0000 0000 0000 0000 0000 0000   *      ..........*[1;53r[53;1H
+[1;54r[53;1H80c74b50:  0000 0000 0000 0000                       *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> closedir) ("/fl/: ")[1;53r[53;1H
+[1;54r[53;1Hvalue = -1 = 0xffffffff[1;53r[53;1H
+[1;54r[53;1H-> opendior  r("? /fl")   l/")[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134423072 = 0x80c749e0[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c749e0),10[1;53r[53;1H
+[1;54r[53;1H80c749e0:                      6170 6366 6700 0000   *        apcfg...*[1;53r[53;1H
+[1;54r[53;1H80c749f0:  0000 0000 0000 0000 0000 0000             *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readx90   dir(0x9e    0x80c749e0),10[1;53r[53;1H
+[1;54r[53;1H80c749e0:                      4e56 5241 4d00 2020   *        NVRAM.  *[1;53r[53;1H
+[1;54r[53;1H80c749f0:  2000 0000 0000 0000 0000 0000             * ...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readdur*   ir(0x80c749e0),10[1;53r[53;1H
+[1;54r[53;1H80c749e0:                      6170 696d 6731 0020   *        apimg1. *[1;53r[53;1H
+[1;54r[53;1H80c749f0:  2000 0000 0000 0000 0000 0000             * ...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d readdir(0x80c749e0),10[1;53r[53;1H
+[1;54r[53;1H80c749e0:                      6170 6366 672e 6261   *        apcfg.ba*[1;53r[53;1H
+[1;54r[53;1H80c749f0:  6b00 0000 0000 0000 0000 0000             *k...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d r4eadd     eaddirt (0x80c749e0),10[1;53r[53;1H
+[1;54r[53;1H80c749e0:                      7465 7374 002e 6261   *        test..ba*[1;53r[53;1H
+[1;54r[53;1H80c749f0:  6b00 0000 0000 0000 0000 0000             *k...............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> which[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: which[1;53r[53;1H
+[1;54r[53;1H-> infl? ate[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: inflate[1;53r[53;1H
+[1;54r[53;1H-> open[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HInstruction Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x802042e0[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0x10800008[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d04, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a20, 80, &yyact)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a20, ffffffff, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: open (0, 2, 2, 0)[1;53r[53;1H
+[1;54r[53;1Hshell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> open("/fl/apcfg", O_RDONLY, 0644)[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: O_RDONLY[1;53r[53;1H
+[1;54r[53;1H-> open("/fl/apcfg", 0, 0644)[1;53r[53;1H
+[1;54r[53;1Hvalue = 13 = 0xd[1;53r[53;1H
+[1;54r[53;1H-> char *myBuffer = (char *  )malloc(100)[1;53r[53;1H
+[1;54r[53;1Hsyntax error[1;53r[53;1H
+[1;54r[53;1H-> char *myBuffer = (char *)malloc(100);[1;53r[53;1H
+[1;54r[53;1Hsyntax error[1;53r[53;1H
+[1;54r[53;1H-> char* muy  yBuffer = (char*)malloc(100);[1;53r[53;1H
+[1;54r[53;1Hsyntax error[1;53r[53;1H
+[1;54r[53;1H-> mybuffer = malloc(100)[1;53r[53;1H
+[1;54r[53;1Hnew symbol "mybuffer" added to symbol table.[1;53r[53;1H
+[1;54r[53;1Hmybuffer = 0x80c748e0: value = -2134423296 = 0x80c74900 = mybuffer + 0x20[1;53r[53;1H
+[1;54r[53;1H-> getwd(muy  ybuffer)[1;53r[53;1H
+[1;54r[53;1Hvalue = -2134423296 = 0x80c74900 = mybuffer + 0x20[1;53r[53;1H
+[1;54r[53;1H-> mybuffer[1;53r[53;1H
+[1;54r[53;1Hmybuffer = 0x80c748e0: value = -2134423296 = 0x80c74900 = mybuffer + 0x20[1;53r[53;1H
+[1;54r[53;1H-> d -> chaBhm(100),            0x80c748e0,10[1;53r[53;1H
+[1;54r[53;1Hsyntax error[1;53r[53;1H
+[1;54r[53;1H-> d 0x80c748e0, 10[1;53r[53;1H
+[1;54r[53;1H80c748e0:  80c7 4900 eeee eeee eeee eeee eeee eeee   *..I.............*[1;53r[53;1H
+[1;54r[53;1H80c748f0:  80c7 48d0                                 *..H.............*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> d 0x80c748e0   900,10[1;53r[53;1H
+[1;54r[53;1H80c74900:  2f66 6c00 eeee eeee eeee eeee eeee eeee   */fl.............*[1;53r[53;1H
+[1;54r[53;1H80c74910:  eeee eeee                                 *................*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> buff = malloc(400)[1;53r[53;1H
+[1;54r[53;1Hnew symbol "buff" added to symbol table.[1;53r[53;1H
+[1;54r[53;1Hbuff = 0x80c74720: value = -2134423744 = 0x80c74740 = buff + 0x20[1;53r[53;1H
+[1;54r[53;1H-> f read(0xd,buff,400)[1;53r[53;1H
+[1;54r[53;1Hvalue = 400 = 0x190[1;53r[53;1H
+[1;54r[53;1H-> d buff,400[1;53r[53;1H
+[1;54r[53;1H80c74740:  2320 436f 7079 7269 6768 7420 2863 2920   *# Copyright (c) *[1;53r[53;1H
+[1;54r[53;1H80c74750:  3230 3032 2041 7468 6572 6f73 2043 6f6d   *2002 Atheros Com*[1;53r[53;1H
+[1;54r[53;1H80c74760:  6d75 6e69 6361 7469 6f6e 732c 2049 6e63   *munications, Inc*[1;53r[53;1H
+[1;54r[53;1H80c74770:  2e2c 2041 6c6c 2052 6967 6874 7320 5265   *., All Rights Re*[1;53r[53;1H
+[1;54r[53;1H80c74780:  7365 7276 6564 0a23 2044 4f20 4e4f 5420   *served.# DO NOT *[1;53r[53;1H
+[1;54r[53;1H80c74790:  4544 4954 202d 2d20 5468 6973 2063 6f6e   *EDIT -- This con*[1;53r[53;1H
+[1;54r[53;1H80c747a0:  6669 6775 7261 7469 6f6e 2066 696c 6520   *figuration file *[1;53r[53;1H
+[1;54r[53;1H80c747b0:  6973 2061 7574 6f6d 6174 6963 616c 6c79   *is automatically*[1;53r[53;1H
+[1;54r[53;1H80c747c0:  2067 656e 6572 6174 6564 0a6d 6167 6963   * generated.magic*[1;53r[53;1H
+[1;54r[53;1H80c747d0:  2041 7235 3278 7841 500a 6677 633a 2031   * Ar52xxAP.fwc: 1*[1;53r[53;1H
+[1;54r[53;1H80c747e0:  340a 6c6f 6769 6e20 4164 6d69 6e0a 6e61   *4.login Admin.na*[1;53r[53;1H
+[1;54r[53;1H80c747f0:  6d65 6164 6472 200a 646f 6d61 696e 7375   *meaddr .domainsu*[1;53r[53;1H
+[1;54r[53;1H80c74800:  6666 6978 200a 5241 4449 5553 6164 6472   *ffix .RADIUSaddr*[1;53r[53;1H
+[1;54r[53;1H80c74810:  200a 5241 4449 5553 706f 7274 2031 3831   * .RADIUSport 181*[1;53r[53;1H
+[1;54r[53;1H80c74820:  320a 5241 4449 5553 7365 6372 6574 200a   *2.RADIUSsecret .*[1;53r[53;1H
+[1;54r[53;1H80c74830:  7061 7373 776f 7264 2035 7570 0a76 6c61   *password 5up.vla*[1;53r[53;1H
+[1;54r[53;1H80c74840:  6e20 4469 7361 626c 650a 696e 7465 7256   *n Disable.interV*[1;53r[53;1H
+[1;54r[53;1H80c74850:  4620 456e 6162 6c65 0a77 6c61 6e30 3020   *F Enable.wlan00 *[1;53r[53;1H
+[1;54r[53;1H80c74860:  696e 7472 6156 4620 456e 6162 6c65 0a77   *intraVF Enable.w*[1;53r[53;1H
+[1;54r[53;1H80c74870:  6c61 6e31 3020 696e 7472 6156 4620 456e   *lan10 intraVF En*[1;53r[53;1H
+[1;54r[53;1H80c74880:  6162 6c65 0a77 6c61 6e30 3020 7661 7073   *able.wlan00 vaps*[1;53r[53;1H
+[1;54r[53;1H80c74890:  2031 0a77 6c61 6e31 3020 7661 7073 2031   * 1.wlan10 vaps 1*[1;53r[53;1H
+[1;54r[53;1H80c748a0:  0a77 6c61 6e30 3020 7573 7270 2030 0a77   *.wlan00 usrp 0.w*[1;53r[53;1H
+[1;54r[53;1H80c748b0:  6c61 6e31 3020 7573 7270 2030 0a77 6c61   *lan10 usrp 0.wla*[1;53r[53;1H
+[1;54r[53;1H80c748c0:  6e30 3020 7076 6964 2031 0a77 6c61 6e31   *n00 pvid 1.wlan1*[1;53r[53;1H
+[1;54r[53;1H80c748d0:  80c7 4730 0000 0020 eeee eeee eeee eeee   *..G0... ........*[1;53r[53;1H
+[1;54r[53;1H80c748e0:  80c7 4900 eeee eeee eeee eeee eeee eeee   *..I.............*[1;53r[53;1H
+[1;54r[53;1H80c748f0:  80c7 48d0 0000 0080 eeee eeee eeee eeee   *..H.............*[1;53r[53;1H
+[1;54r[53;1H80c74900:  2f66 6c00 eeee eeee eeee eeee eeee eeee   */fl.............*[1;53r[53;1H
+[1;54r[53;1H80c74910:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74920:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74930:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74940:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74950:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74960:  eeee eeee eeee eeee eeee eeee eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74970:  80c7 48f0 0000 0020 eeee eeee eeee eeee   *..H.... ........*[1;53r[53;1H
+[1;54r[53;1H80c74980:  2f66 6c2f 6170 6366 6700 eeee eeee eeee   */fl/apcfg.......*[1;53r[53;1H
+[1;54r[53;1H80c74990:  80c7 4970 0000 0020 eeee eeee eeee eeee   *..Ip... ........*[1;53r[53;1H
+[1;54r[53;1H80c749a0:  2f66 6c2f 6170 6366 6700 eeee eeee eeee   */fl/apcfg.......*[1;53r[53;1H
+[1;54r[53;1H80c749b0:  80c7 4990 0000 0020 eeee eeee eeee eeee   *..I.... ........*[1;53r[53;1H
+[1;54r[53;1H80c749c0:  2f66 6c2f 6170 6366 6700 eeee eeee eeee   */fl/apcfg.......*[1;53r[53;1H
+[1;54r[53;1H80c749d0:  80c7 49b0 0000 0080 eeee eeee eeee eeee   *..I.............*[1;53r[53;1H
+[1;54r[53;1H80c749e0:  0000 000c 0000 0121 7465 7374 002e 6261   *.......!test..ba*[1;53r[53;1H
+[1;54r[53;1H80c749f0:  6b00 0000 0000 0000 0000 0000 0000 0000   *k...............*[1;53r[53;1H
+[1;54r[53;1H80c74a00:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74a10:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74a20:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74a30:  0000 0000 0000 0000 0000 0000 0000 0000   *................*[1;53r[53;1H
+[1;54r[53;1H80c74a40:  0000 0000 0000 0000 0000 0000 eeee eeee   *................*[1;53r[53;1H
+[1;54r[53;1H80c74a50:  80c7 49d0 0000 0020 eeee eeee eeee eeee   *..I.... ........*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> i[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY[1;53r[53;1H
+[1;54r[53;1H---------- ------------ -------- --- ---------- -------- -------- ------- -----[1;53r[53;1H
+[1;54r[53;1HtExcTask   excTask      80fcf2a0   0 PEND       80247820 80fcf198       0     0[1;53r[53;1H
+[1;54r[53;1HtLogTask   logTask      80fcc770   0 PEND       80247820 80fcc668  3d0001     0[1;53r[53;1H
+[1;54r[53;1HtTrapMon   apTrapMonTas 80f5ab00   1 DELAY      80229244 80f5a9e0       0   373[1;53r[53;1H
+[1;54r[53;1HtTxQueueTastTxQueueTask 80c97c50   1 DELAY      80229244 80c97be0       0    13[1;53r[53;1H
+[1;54r[53;1HNatUpateTimNatUpdateTim 80a7f950   1 DELAY      80229244 80a7f8d8       0    30[1;53r[53;1H
+[1;54r[53;1HtWlanCal   800b4d1c     80d02f80  10 PEND       80247820 80d02e78       0     0[1;53r[53;1H
+[1;54r[53;1HtShell     shell        80c84b80  10 READY      80229d90 80c838b0   d0003     0[1;53r[53;1H
+[1;54r[53;1HtDHCPS     acosDHCPServ 809d86d0  49 PEND       80247820 809d8550       0     0[1;53r[53;1H
+[1;54r[53;1HtNetTask   netTask      80f8d220  50 PEND       801adde0 80f8d168      3d     0[1;53r[53;1H
+[1;54r[53;1HtAEPoll    8001795c     80f5c130  50 DELAY      80229244 80f5c0a0       0   111[1;53r[53;1H
+[1;54r[53;1HtApHouseKeeapHouseKeepi 80ffadf0  50 DELAY      80229244 80ffad50       0  2146[1;53r[53;1H
+[1;54r[53;1HtCliExec   80118504     80c4aba0  51 PEND       80247820 80c4a980       0     0[1;53r[53;1H
+[1;54r[53;1HtCliTask   80116318     80fe9850  51 DELAY      80229244 80fe91e0   30065    20[1;53r[53;1H
+[1;54r[53;1HtBdgAging  800e6d58     80d071a0  55 DELAY      80229244 80d07128       0   332[1;53r[53;1H
+[1;54r[53;1HtTffsPTask flPollTask   80fcae80 100 DELAY      80229244 80fcae10  3d0002     1[1;53r[53;1H
+[1;54r[53;1HtTmSch     801904d8     80fe4630 100 PEND+T     801adde0 80fe45a8  3d0004   336[1;53r[53;1H
+[1;54r[53;1HtLogWrt    LogWrtTask   80a78100 100 PEND       80247820 80a77f80       0     0[1;53r[53;1H
+[1;54r[53;1HtaskDbg    801aa910     80fd4850 200 PEND       80247820 80fd4658       0     0[1;53r[53;1H
+[1;54r[53;1Ht_Http_D   http_d       80a72cc0 200 PEND+T     801adde0 80a72740  3d0004    21[1;53r[53;1H
+[1;54r[53;1Ht_HttpdMU  http_MU      80a27aa0 200 PEND+T     801adde0 80a27790  3d0004    16[1;53r[53;1H
+[1;54r[53;1HabFtpc     abFtpcMain   80ff53f0 201 PEND       80247820 80ff4f80       0     0[1;53r[53;1H
+[1;54r[53;1HtDcacheUpd dcacheUpd    80f67790 250 DELAY      80229244 80f676f8       0     4[1;53r[53;1H
+[1;54r[53;1HtMblkGC    800de354     80fef1b0 254 DELAY      80229244 80fef138       0     2[1;53r[53;1H
+[1;54r[53;1HtTelnetd0  abTelnetd0   80fedc00 254 PEND       801adde0 80fed368       0     0[1;53r[53;1H
+[1;54r[53;1HtRtcTask   800ddd70     80a756e0 254 PEND+T     801adde0 80a75678  6b0002 22793[1;53r[53;1H
+[1;54r[53;1Ht_upnpd    upnp_init    80a22880 254 DELAY      80229244 80a22778       0    12[1;53r[53;1H
+[1;54r[53;1HtOneSec    oneSecTask   809d70b0 255 DELAY      80229244 809d7040       0     7[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> telnetInit[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: telnetInit[1;53r[53;1H
+[1;54r[53;1H-> telen  netD d[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: telnetd[1;53r[53;1H
+[1;54r[53;1H-> telnetd0[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: telnetd0[1;53r[53;1H
+[1;54r[53;1H-> Te; len  net[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: Telnet[1;53r[53;1H
+[1;54r[53;1H-> which[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: which[1;53r[53;1H
+[1;54r[53;1H-> printf tes    ("test")[1;53r[53;1H
+[1;54r[53;1Htestvalue = 4 = 0x4[1;53r[53;1H
+[1;54r[53;1H-> tt  help[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hhelp                           Print this list[1;53r[53;1H
+[1;54r[53;1HioHelp                         Print I/O utilities help info[1;53r[53;1H
+[1;54r[53;1HdbgHelp                        Print debugger help info[1;53r[53;1H
+[1;54r[53;1HnfsHelp                        Print nfs help info[1;53r[53;1H
+[1;54r[53;1HnetHelp                        Print network help info[1;53r[53;1H
+[1;54r[53;1HspyHelp                        Print task histogrammer help info[1;53r[53;1H
+[1;54r[53;1HtimexHelp                      Print execution timer help info[1;53r[53;1H
+[1;54r[53;1Hh         [n]                  Print (or set) shell history[1;53r[53;1H
+[1;54r[53;1Hi         [task]               Summary of tasks' TCBs[1;53r[53;1H
+[1;54r[53;1Hti        task                 Complete info on TCB for task[1;53r[53;1H
+[1;54r[53;1Hsp        adr,args...          Spawn a task, pri=100, opt=0, stk=20000[1;53r[53;1H
+[1;54r[53;1HtaskSpawn name,pri,opt,stk,adr,args... Spawn a task[1;53r[53;1H
+[1;54r[53;1Htd        task                 Delete a task[1;53r[53;1H
+[1;54r[53;1Hts        task                 Suspend a task[1;53r[53;1H
+[1;54r[53;1Htr        task                 Resume a task[1;53r[53;1H
+[1;54r[53;1Hd         [adr[,nunits[,width]]] Display memory[1;53r[53;1H
+[1;54r[53;1Hm         adr[,width]          Modify memory[1;53r[53;1H
+[1;54r[53;1HmRegs     [reg[,task]]         Modify a task's registers interactively[1;53r[53;1H
+[1;54r[53;1Hpc        [task]               Return task's program counter[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HType <CR> to continue, Q<CR> to stop: [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hiam       "user"[,"passwd"]  [53;33HSet user name and passwd[1;53r[53;1H
+[1;54r[53;1Hwhoami                         Print user name[1;53r[53;1H
+[1;54r[53;1Hdevs                           List devices[1;53r[53;1H
+[1;54r[53;1Hld        [syms[,noAbort][,"name"]] Load stdin, or file, into memory[1;53r[53;1H
+[1;54r[53;1H                               (syms = add symbols to table:[1;53r[53;1H
+[1;54r[53;1H                               -1 = none, 0 = globals, 1 = all)[1;53r[53;1H
+[1;54r[53;1Hlkup      ["substr"]         List symbols in system symbol table[1;53r[53;1H
+[1;54r[53;1HlkAddr    address              List symbol table entries near address[1;53r[53;1H
+[1;54r[53;1HcheckStack  [task]             List task stack sizes and usage[1;53r[53;1H
+[1;54r[53;1HprintErrno  value              Print the name of a status value[1;53r[53;1H
+[1;54r[53;1Hperiod    secs,adr,args... Spawn task to call function periodically[1;53r[53;1H
+[1;54r[53;1Hrepeat    n,adr,args...    Spawn task to call function n times (0=forever)[1;53r[53;1H
+[1;54r[53;1Hversion                        Print VxWorks version info, and boot line[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HNOTE:  Arguments specifying 'task' can be either task ID or name.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hvalue = 1 = 0x1[1;53r[53;1H
+[1;54r[53;1H-> checkstack[1;53r[53;1H
+[1;54r[53;1Hundefined symbol: checkstack[1;53r[53;1H
+[1;54r[53;1H-> checkStack[1;53r[53;1H
+[1;54r[53;1H  NAME        ENTRY        TID     SIZE   CUR  HIGH  MARGIN[1;53r[53;1H
+[1;54r[53;1H------------ ------------ -------- ----- ----- ----- ------[1;53r[53;1H
+[1;54r[53;1HtExcTask     excTask      80fcf2a0  7984   264   976   7008 [1;53r[53;1H
+[1;54r[53;1HtLogTask     logTask      80fcc770  4992   264  1024   3968 [1;53r[53;1H
+[1;54r[53;1HtTrapMon     apTrapMonTas 80f5ab00 19984   288   416  19568 [1;53r[53;1H
+[1;54r[53;1HtTxQueueTask tTxQueueTask 80c97c50 19984   112   920  19064 [1;53r[53;1H
+[1;54r[53;1HNatUpateTime NatUpdateTim 80a7f950 19984   120   264  19720 [1;53r[53;1H
+[1;54r[53;1HtWlanCal     0x00800b4d1c 80d02f80  4080   264   464   3616 [1;53r[53;1H
+[1;54r[53;1HtShell       shell        80c84b80 64848  1200  5016  59832 [1;53r[53;1H
+[1;54r[53;1HtDHCPS       acosDHCPServ 809d86d0  5104   384   480   4624 [1;53r[53;1H
+[1;54r[53;1HtNetTask     netTask      80f8d220 20464   184  3712  16752 [1;53r[53;1H
+[1;54r[53;1HtAEPoll      0x008001795c 80f5c130  4080   144   264   3816 [1;53r[53;1H
+[1;54r[53;1HtApHouseKeep apHouseKeepi 80ffadf0 19984   160   216  19768 [1;53r[53;1H
+[1;54r[53;1HtCliExec     0x0080118504 80c4aba0 32752   544   600  32152 [1;53r[53;1H
+[1;54r[53;1HtCliTask     0x0080116318 80fe9850 20464  1648  2368  18096 [1;53r[53;1H
+[1;54r[53;1HtBdgAging    0x00800e6d58 80d071a0 16368   120   248  16120 [1;53r[53;1H
+[1;54r[53;1HtTffsPTask   flPollTask   80fcae80  2032   112   312   1720 [1;53r[53;1H
+[1;54r[53;1HtTmSch       0x00801904d8 80fe4630  6128   136   584   5544 [1;53r[53;1H
+[1;54r[53;1HtLogWrt      LogWrtTask   80a78100 10224   384   440   9784 [1;53r[53;1H
+[1;54r[53;1HtaskDbg      0x00801aa910 80fd4850  2032   504   560   1472 [1;53r[53;1H
+[1;54r[53;1Ht_Http_D     http_d       80a72cc0 307184  1408 82104 225080 [1;53r[53;1H
+[1;54r[53;1Ht_HttpdMU    http_MU      80a27aa0 20464   784  1992  18472 [1;53r[53;1H
+[1;54r[53;1HabFtpc       abFtpcMain   80ff53f0 19792  1136  1416  18376 [1;53r[53;1H
+[1;54r[53;1HtDcacheUpd   dcacheUpd    80f67790  4992   152  1120   3872 [1;53r[53;1H
+[1;54r[53;1HtMblkGC      0x00800de354 80fef1b0  4992   120   256   4736 [1;53r[53;1H
+[1;54r[53;1HtTelnetd0    abTelnetd0   80fedc00 10224  2200  2400   7824 [1;53r[53;1H
+[1;54r[53;1HtRtcTask     0x00800ddd70 80a756e0 10224   104  6296   3928 [1;53r[53;1H
+[1;54r[53;1Ht_upnpd      upnp_init    80a22880 98288   264  4784  93504 [1;53r[53;1H
+[1;54r[53;1HtOneSec      oneSecTask   809d70b0  2032   112   936   1096 [1;53r[53;1H
+[1;54r[53;1HINTERRUPT                           5008     0   912   4096 [1;53r[53;1H
+[1;54r[53;1Hvalue = 36 = 0x24 = '$'[1;53r[53;1H
+[1;54r[53;1H-> tt(80a72cc0)[1;53r[53;1H
+[1;54r[53;1Hinvalid number: 80a[1;53r[53;1H
+[1;54r[53;1H-> tt(0x80a72cc0)[1;53r[53;1H
+[1;54r[53;1H800eac54 http_d         +2ac: select (eeeeeeee, eeeeeeee, eeeeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H802096fc select         +300: semTake (80a72d50, 3c, 801fa604, 801fa5f8)[1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> l(0x801adde0, 30)[1;53r[53;1H
+[1;54r[53;1H0x801adde0  24090001    li      [53;41Ht1,1[1;53r[53;1H
+[1;54r[53;1H0x801adde4  3c088047    lui     [53;41Ht0,0x8047[1;53r[53;1H
+[1;54r[53;1H0x801adde8  8d08aedc    lw      [53;41Ht0,-20772(t0)[1;53r[53;1H
+[1;54r[53;1H0x801addec  1049000a    beq     [53;41Hv0,t1,0x801ade18[1;53r[53;1H
+[1;54r[53;1H0x801addf0  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x801addf4  8fbf0018    lw      [53;41Hra,24(sp)[1;53r[53;1H
+[1;54r[53;1H0x801addf8  03e00008    jr      [53;41Hra[1;53r[53;1H
+[1;54r[53;1H0x801addfc  27bd0020    addiu   [53;41Hsp,sp,32[1;53r[53;1H
+[1;54r[53;1H0x801ade00  0c06b29d    jal     [53;41HwindExit[1;53r[53;1H
+[1;54r[53;1H0x801ade04  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x801ade08  8fbf0018    lw      [53;41Hra,24(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade0c  2402ffff    li      [53;41Hv0,-1[1;53r[53;1H
+[1;54r[53;1H0x801ade10  03e00008    jr      [53;41Hra[1;53r[53;1H
+[1;54r[53;1H0x801ade14  27bd0020    addiu   [53;41Hsp,sp,32[1;53r[53;1H
+[1;54r[53;1H0x801ade18  0100f809    jalr    [53;41Ht0[1;53r[53;1H
+[1;54r[53;1H0x801ade1c  8fa40024    lw      [53;41Ha0,36(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade20  00402821    move    [53;41Ha1,v0[1;53r[53;1H
+[1;54r[53;1H0x801ade24  8fa40020    lw      [53;41Ha0,32(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade28  8fbf0018    lw      [53;41Hra,24(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade2c  0806b60c    j       [53;41HsemTake[1;53r[53;1H
+[1;54r[53;1H0x801ade30  27bd0020    addiu   [53;41Hsp,sp,32[1;53r[53;1H
+[1;54r[53;1H[53;9H[53;17H[53;25HsemOTake:[1;53r[53;1H
+[1;54r[53;1H0x801ade34  27bdffe8    addiu   [53;41Hsp,sp,-24[1;53r[53;1H
+[1;54r[53;1H0x801ade38  afbf0010    sw      [53;41Hra,16(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade3c  0c06b68a    jal     [53;41HsemBTake[1;53r[53;1H
+[1;54r[53;1H0x801ade40  2405ffff    li      [53;41Ha1,-1[1;53r[53;1H
+[1;54r[53;1H0x801ade44  8fbf0010    lw      [53;41Hra,16(sp)[1;53r[53;1H
+[1;54r[53;1H0x801ade48  03e00008    jr      [53;41Hra[1;53r[53;1H
+[1;54r[53;1H0x801ade4c  27bd0018    addiu   [53;41Hsp,sp,24[1;53r[53;1H
+[1;54r[53;1H[53;9H[53;17H[53;25HsemClear:[1;53r[53;1H
+[1;54r[53;1H0x801ade50  27bdffe8    addiu   [53;41Hsp,sp,-24[1;53r[53;1H
+[1;54r[53;1H0x801ade54  afbf0010    sw      [53;41Hra,16(sp)[1;53r[53;1H
+[1;54r[53;1Hvalue = -2145722792 = 0x801ade58 = semClear + 0x8[1;53r[53;1H
+[1;54r[53;1H-> l(http_d, 30)[1;53r[53;1H
+[1;54r[53;1H[53;9H[53;17H[53;25Hhttp_d:[1;53r[53;1H
+[1;54r[53;1H0x800ea9a8  27bdfbc8    addiu   [53;41Hsp,sp,-1080[1;53r[53;1H
+[1;54r[53;1H0x800ea9ac  afb00410    sw      [53;41Hs0,1040(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9b0  00808021    move    [53;41Hs0,a0[1;53r[53;1H
+[1;54r[53;1H0x800ea9b4  27a40059    addiu   [53;41Ha0,sp,89[1;53r[53;1H
+[1;54r[53;1H0x800ea9b8  3c028028    lui     [53;41Hv0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800ea9bc  9042583c    lbu     [53;41Hv0,22588(v0)[1;53r[53;1H
+[1;54r[53;1H0x800ea9c0  00002821    move    [53;41Ha1,zero[1;53r[53;1H
+[1;54r[53;1H0x800ea9c4  24060095    li      [53;41Ha2,149[1;53r[53;1H
+[1;54r[53;1H0x800ea9c8  afb10414    sw      [53;41Hs1,1044(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9cc  24110001    li      [53;41Hs1,1[1;53r[53;1H
+[1;54r[53;1H0x800ea9d0  afbf0434    sw      [53;41Hra,1076(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d4  afbe0430    sw      [53;41Hs8,1072(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d8  afb7042c    sw      [53;41Hs7,1068(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9dc  afb60428    sw      [53;41Hs6,1064(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e0  afb50424    sw      [53;41Hs5,1060(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e4  afb40420    sw      [53;41Hs4,1056(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e8  afb3041c    sw      [53;41Hs3,1052(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9ec  afb20418    sw      [53;41Hs2,1048(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f0  afa003e0    sw      [53;41Hzero,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f4  0c071ef4    jal     [53;41Hmemset[1;53r[53;1H
+[1;54r[53;1H0x800ea9f8  a3a20058    sb      [53;41Hv0,88(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9fc  24120050    li      [53;41Hs2,80[1;53r[53;1H
+[1;54r[53;1H0x800eaa00  16120004    bne     [53;41Hs0,s2,0x800eaa14[1;53r[53;1H
+[1;54r[53;1H0x800eaa04  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa08  0c03a92f    jal     [53;41Hdecompress_html[1;53r[53;1H
+[1;54r[53;1H0x800eaa0c  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa10  00408821    move    [53;41Hs1,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaa14  3c03803f    lui     [53;41Hv1,0x803f[1;53r[53;1H
+[1;54r[53;1H0x800eaa18  8c63f1e0    lw      [53;41Hv1,-3616(v1)[1;53r[53;1H
+[1;54r[53;1H0x800eaa1c  24020001    li      [53;41Hv0,1[1;53r[53;1H
+[1;54r[53;1Hvalue = -2146522592 = 0x800eaa20 = http_d + 0x78[1;53r[53;1H
+[1;54r[53;1H-> l(http_d,   )[1;53r[53;1H
+[1;54r[53;1H[53;9H[53;17H[53;25Hhttp_d:[1;53r[53;1H
+[1;54r[53;1H0x800ea9a8  27bdfbc8    addiu   [53;41Hsp,sp,-1080[1;53r[53;1H
+[1;54r[53;1H0x800ea9ac  afb00410    sw      [53;41Hs0,1040(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9b0  00808021    move    [53;41Hs0,a0[1;53r[53;1H
+[1;54r[53;1H0x800ea9b4  27a40059    addiu   [53;41Ha0,sp,89[1;53r[53;1H
+[1;54r[53;1H0x800ea9b8  3c028028    lui     [53;41Hv0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800ea9bc  9042583c    lbu     [53;41Hv0,22588(v0)[1;53r[53;1H
+[1;54r[53;1H0x800ea9c0  00002821    move    [53;41Ha1,zero[1;53r[53;1H
+[1;54r[53;1H0x800ea9c4  24060095    li      [53;41Ha2,149[1;53r[53;1H
+[1;54r[53;1H0x800ea9c8  afb10414    sw      [53;41Hs1,1044(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9cc  24110001    li      [53;41Hs1,1[1;53r[53;1H
+[1;54r[53;1H0x800ea9d0  afbf0434    sw      [53;41Hra,1076(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d4  afbe0430    sw      [53;41Hs8,1072(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d8  afb7042c    sw      [53;41Hs7,1068(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9dc  afb60428    sw      [53;41Hs6,1064(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e0  afb50424    sw      [53;41Hs5,1060(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e4  afb40420    sw      [53;41Hs4,1056(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e8  afb3041c    sw      [53;41Hs3,1052(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9ec  afb20418    sw      [53;41Hs2,1048(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f0  afa003e0    sw      [53;41Hzero,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f4  0c071ef4    jal     [53;41Hmemset[1;53r[53;1H
+[1;54r[53;1H0x800ea9f8  a3a20058    sb      [53;41Hv0,88(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9fc  24120050    li      [53;41Hs2,80[1;53r[53;1H
+[1;54r[53;1H0x800eaa00  16120004    bne     [53;41Hs0,s2,0x800eaa14[1;53r[53;1H
+[1;54r[53;1H0x800eaa04  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa08  0c03a92f    jal     [53;41Hdecompress_html[1;53r[53;1H
+[1;54r[53;1H0x800eaa0c  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa10  00408821    move    [53;41Hs1,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaa14  3c03803f    lui     [53;41Hv1,0x803f[1;53r[53;1H
+[1;54r[53;1H0x800eaa18  8c63f1e0    lw      [53;41Hv1,-3616(v1)[1;53r[53;1H
+[1;54r[53;1H0x800eaa1c  24020001    li      [53;41Hv0,1[1;53r[53;1H
+[1;54r[53;1Hvalue = -2146522592 = 0x800eaa20 = http_d + 0x78[1;53r[53;1H
+[1;54r[53;1H-> l(http_d, 100)[1;53r[53;1H
+[1;54r[53;1H[53;9H[53;17H[53;25Hhttp_d:[1;53r[53;1H
+[1;54r[53;1H0x800ea9a8  27bdfbc8    addiu   [53;41Hsp,sp,-1080[1;53r[53;1H
+[1;54r[53;1H0x800ea9ac  afb00410    sw      [53;41Hs0,1040(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9b0  00808021    move    [53;41Hs0,a0[1;53r[53;1H
+[1;54r[53;1H0x800ea9b4  27a40059    addiu   [53;41Ha0,sp,89[1;53r[53;1H
+[1;54r[53;1H0x800ea9b8  3c028028    lui     [53;41Hv0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800ea9bc  9042583c    lbu     [53;41Hv0,22588(v0)[1;53r[53;1H
+[1;54r[53;1H0x800ea9c0  00002821    move    [53;41Ha1,zero[1;53r[53;1H
+[1;54r[53;1H0x800ea9c4  24060095    li      [53;41Ha2,149[1;53r[53;1H
+[1;54r[53;1H0x800ea9c8  afb10414    sw      [53;41Hs1,1044(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9cc  24110001    li      [53;41Hs1,1[1;53r[53;1H
+[1;54r[53;1H0x800ea9d0  afbf0434    sw      [53;41Hra,1076(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d4  afbe0430    sw      [53;41Hs8,1072(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9d8  afb7042c    sw      [53;41Hs7,1068(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9dc  afb60428    sw      [53;41Hs6,1064(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e0  afb50424    sw      [53;41Hs5,1060(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e4  afb40420    sw      [53;41Hs4,1056(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9e8  afb3041c    sw      [53;41Hs3,1052(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9ec  afb20418    sw      [53;41Hs2,1048(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f0  afa003e0    sw      [53;41Hzero,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9f4  0c071ef4    jal     [53;41Hmemset[1;53r[53;1H
+[1;54r[53;1H0x800ea9f8  a3a20058    sb      [53;41Hv0,88(sp)[1;53r[53;1H
+[1;54r[53;1H0x800ea9fc  24120050    li      [53;41Hs2,80[1;53r[53;1H
+[1;54r[53;1H0x800eaa00  16120004    bne     [53;41Hs0,s2,0x800eaa14[1;53r[53;1H
+[1;54r[53;1H0x800eaa04  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa08  0c03a92f    jal     [53;41Hdecompress_html[1;53r[53;1H
+[1;54r[53;1H0x800eaa0c  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa10  00408821    move    [53;41Hs1,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaa14  3c03803f    lui     [53;41Hv1,0x803f[1;53r[53;1H
+[1;54r[53;1H0x800eaa18  8c63f1e0    lw      [53;41Hv1,-3616(v1)[1;53r[53;1H
+[1;54r[53;1H0x800eaa1c  24020001    li      [53;41Hv0,1[1;53r[53;1H
+[1;54r[53;1H0x800eaa20  14620003    bne     [53;41Hv1,v0,0x800eaa30[1;53r[53;1H
+[1;54r[53;1H0x800eaa24  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa28  0c03b27a    jal     [53;41HSetValueToXMLPage[1;53r[53;1H
+[1;54r[53;1H0x800eaa2c  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa30  16200006    bnez    [53;41Hs1,0x800eaa4c[1;53r[53;1H
+[1;54r[53;1H0x800eaa34  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa38  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eaa3c  0c0800a0    jal     [53;41Hprintf[1;53r[53;1H
+[1;54r[53;1H0x800eaa40  24845840    addiu   [53;41Ha0,a0,22592[1;53r[53;1H
+[1;54r[53;1H0x800eaa44  0803ad65    j       [53;41H0x800eb594[1;53r[53;1H
+[1;54r[53;1H0x800eaa48  8fbf0434    lw      [53;41Hra,1076(sp)[1;53r[53;1H
+[1;54r[53;1H0x800eaa4c  0c081f25    jal     [53;41Hmalloc[1;53r[53;1H
+[1;54r[53;1H0x800eaa50  24041c01    li      [53;41Ha0,7169[1;53r[53;1H
+[1;54r[53;1H0x800eaa54  0040a021    move    [53;41Hs4,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaa58  16800006    bnez    [53;41Hs4,0x800eaa74[1;53r[53;1H
+[1;54r[53;1H0x800eaa5c  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa60  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eaa64  0c0800a0    jal     [53;41Hprintf[1;53r[53;1H
+[1;54r[53;1H0x800eaa68  24845868    addiu   [53;41Ha0,a0,22632[1;53r[53;1H
+[1;54r[53;1H0x800eaa6c  0803ad65    j       [53;41H0x800eb594[1;53r[53;1H
+[1;54r[53;1H0x800eaa70  8fbf0434    lw      [53;41Hra,1076(sp)[1;53r[53;1H
+[1;54r[53;1H0x800eaa74  12120005    beq     [53;41Hs0,s2,0x800eaa8c[1;53r[53;1H
+[1;54r[53;1H0x800eaa78  24020118    li      [53;41Hv0,280[1;53r[53;1H
+[1;54r[53;1H0x800eaa7c  52020004    beql    [53;41Hs0,v0,0x800eaa90[1;53r[53;1H
+[1;54r[53;1H0x800eaa80  24040118    li      [53;41Ha0,280[1;53r[53;1H
+[1;54r[53;1H0x800eaa84  0803aaa8    j       [53;41H0x800eaaa0[1;53r[53;1H
+[1;54r[53;1H0x800eaa88  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa8c  24040050    li      [53;41Ha0,80[1;53r[53;1H
+[1;54r[53;1H0x800eaa90  0c03ae55    jal     [53;41Hsocket_init[1;53r[53;1H
+[1;54r[53;1H0x800eaa94  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaa98  0803aaad    j       [53;41H0x800eaab4[1;53r[53;1H
+[1;54r[53;1H0x800eaa9c  afa203e0    sw      [53;41Hv0,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800eaaa0  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eaaa4  0c0800a0    jal     [53;41Hprintf[1;53r[53;1H
+[1;54r[53;1H0x800eaaa8  24845884    addiu   [53;41Ha0,a0,22660[1;53r[53;1H
+[1;54r[53;1H0x800eaaac  0c089e2b    jal     [53;41Hexit[1;53r[53;1H
+[1;54r[53;1H0x800eaab0  24040001    li      [53;41Ha0,1[1;53r[53;1H
+[1;54r[53;1H0x800eaab4  0c03e978    jal     [53;41HaccessCgi_initUserRecord[1;53r[53;1H
+[1;54r[53;1H0x800eaab8  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaabc  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eaac0  0c036402    jal     [53;41Hnvram_get[1;53r[53;1H
+[1;54r[53;1H0x800eaac4  2484589c    addiu   [53;41Ha0,a0,22684[1;53r[53;1H
+[1;54r[53;1H0x800eaac8  14400003    bnez    [53;41Hv0,0x800eaad8[1;53r[53;1H
+[1;54r[53;1H0x800eaacc  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaad0  3c028028    lui     [53;41Hv0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eaad4  244257cc    addiu   [53;41Hv0,v0,22476[1;53r[53;1H
+[1;54r[53;1H0x800eaad8  0c071868    jal     [53;41Hatoi[1;53r[53;1H
+[1;54r[53;1H0x800eaadc  00402021    move    [53;41Ha0,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaae0  00402021    move    [53;41Ha0,v0[1;53r[53;1H
+[1;54r[53;1H0x800eaae4  24020050    li      [53;41Hv0,80[1;53r[53;1H
+[1;54r[53;1H0x800eaae8  10820015    beq     [53;41Ha0,v0,0x800eab40[1;53r[53;1H
+[1;54r[53;1H0x800eaaec  2402ffff    li      [53;41Hv0,-1[1;53r[53;1H
+[1;54r[53;1H0x800eaaf0  0c03ae55    jal     [53;41Hsocket_init[1;53r[53;1H
+[1;54r[53;1H0x800eaaf4  00000000    nop     [53;41H[1;53r[53;1H
+[1;54r[53;1H0x800eaaf8  3c018043    lui     [53;41Hat,0x8043[1;53r[53;1H
+[1;54r[53;1H0x800eaafc  ac22ef98    sw      [53;41Hv0,-4200(at)[1;53r[53;1H
+[1;54r[53;1H0x800eab00  00402021    move    [53;41Ha0,v0[1;53r[53;1H
+[1;54r[53;1H0x800eab04  0c07dc33    jal     [53;41Hlisten[1;53r[53;1H
+[1;54r[53;1H0x800eab08  24050005    li      [53;41Ha1,5[1;53r[53;1H
+[1;54r[53;1H0x800eab0c  2403ffff    li      [53;41Hv1,-1[1;53r[53;1H
+[1;54r[53;1H0x800eab10  1443000e    bne     [53;41Hv0,v1,0x800eab4c[1;53r[53;1H
+[1;54r[53;1H0x800eab14  8fa403e0    lw      [53;41Ha0,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800eab18  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eab1c  0c0800a0    jal     [53;41Hprintf[1;53r[53;1H
+[1;54r[53;1H0x800eab20  248458a8    addiu   [53;41Ha0,a0,22696[1;53r[53;1H
+[1;54r[53;1H0x800eab24  0803aad3    j       [53;41H0x800eab4c[1;53r[53;1H
+[1;54r[53;1H0x800eab28  8fa403e0    lw      [53;41Ha0,992(sp)[1;53r[53;1H
+[1;54r[53;1H0x800eab2c  3c048028    lui     [53;41Ha0,0x8028[1;53r[53;1H
+[1;54r[53;1H0x800eab30  0c0800a0    jal     [53;41Hprintf[1;53r[53;1H
+[1;54r[53;1H0x800eab34  248458f8    addiu   [53;41Ha0,a0,22776[1;53r[53;1H
+[1;54r[53;1Hvalue = -2146522312 = 0x800eab38 = http_d + 0x190[1;53r[53;1H
+[1;54r[53;1H-> syms Show(sysSymTable   b  bl)[1;53r[53;1H
+[1;54r[53;1HNumber of Symbols   : 7523      [1;53r[53;1H
+[1;54r[53;1HSymbol Mutex Id     : 0x80c92b88  [1;53r[53;1H
+[1;54r[53;1HSymbol Hash Id      : 0x80c92350  [1;53r[53;1H
+[1;54r[53;1HSymbol memPartId    : 0x8042cbc0  [1;53r[53;1H
+[1;54r[53;1HName Clash Policy   : Allowed   [1;53r[53;1H
+[1;54r[53;1Hvalue = 0 = 0x0[1;53r[53;1H
+[1;54r[53;1H-> symShow[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HInstruction Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x8020cb60[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0x10800008[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x00000000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d04, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a20, 80, 1aa)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a20, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (80f66330, eeeeeeee, c84a23, 80c84a20)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: symShow (0, 1, 1, 0)[1;53r[53;1H
+[1;54r[53;1Hshell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> sysSymTbl[1;53r[53;1H
+[1;54r[53;1HsysSymTbl = 0x804566ec: value = -2134299776 = 0x80c92b80[1;53r[53;1H
+[1;54r[53;1H-> d sysSymTbl,200[1;53r[53;1H
+[1;54r[53;1H80c92b80:  8042 cca0 80c9 2350 8045 5280 0104 0000   *.B....#P.ER.....*[1;53r[53;1H
+[1;54r[53;1H80c92b90:  0000 0000 0000 0000 6689 1463 803f 6fe0   *........f..c.?o.*[1;53r[53;1H
+[1;54r[53;1H80c92ba0:  0000 0000 8042 cbc0 0000 0001 0000 1d63   *.....B.........c*[1;53r[53;1H
+[1;54r[53;1H80c92bb0:  80c9 2b70 0000 0030 5678 6186 1b76 f861   *..+p...0Vxa..v.a*[1;53r[53;1H
+[1;54r[53;1H80c92bc0:  8045 5280 0104 0000 0000 0000 0000 0000   *.ER.............*[1;53r[53;1H
+[1;54r[53;1H80c92bd0:  f6a5 73ad 803f 6fe0 0000 0000 125e c950   *..s..?o......^.P*[1;53r[53;1H
+[1;54r[53;1H80c92be0:  80c9 2bb0 0000 0030 63b5 e4f5 d794 0bbb   *..+....0c.......*[1;53r[53;1H
+[1;54r[53;1H80c92bf0:  8045 5280 0104 0000 0000 0000 0000 0000   *.ER.............*[1;53r[53;1H
+[1;54r[53;1H80c92c00:  0691 a64c 803f 6fe0 0000 0000 a01c 3db3   *...L.?o.......=.*[1;53r[53;1H
+[1;54r[53;1H80c92c10:  80c9 2be0 0000 0030 b6fa 6aa9 dfd5 0b04   *..+....0..j.....*[1;53r[53;1H
+[1;54r[53;1H80c92c20:  8045 5280 0104 0000 0000 0000 0000 0000   *.ER.............*[1;53r[53;1H
+[1;54r[53;1H80c92c30:  7c60 e41a 803f 6fe0 0000 0000 fa83 8281   *|`...?o.........*[1;53r[53;1H
+[1;54r[53;1H80c92c40:  80c9 2c10 0000 0030 beab 65c5 9455 88e6   *..,....0..e..U..*[1;53r[53;1H
+[1;54r[53;1H80c92c50:  8045 5280 010d 0000 0000 0000 0000 0000   *.ER.............*[1;53r[53;1H
+[1;54r[53;1H80c92c60:  85c6 1f8f 803f 7060 0000 0000 26af 5c56   *.....?p`....&.\V*[1;53r[53;1H
+[1;54r[53;1H80c92c70:  80c9 2c40 0000 0020 ec1a 6b64 39c4 c946   *..,@... ..kd9..F*[1;53r[53;1H
+[1;54r[53;1H80c92c80:  626f 6f74 486f 7374 3a00 ffa5 9531 ca9e   *bootHost:....1..*[1;53r[53;1H
+[1;54r[53;1H80c92c90:  80c9 2c70 0000 0130 de19 0e17 f04c 15ff   *..,p...0.....L..*[1;53r[53;1H
+[1;54r[53;1H80c92ca0:  0000 0000 80f6 6330 0005 fcf1 80c9 2c80   *......c0......,.*[1;53r[53;1H
+[1;54r[53;1H80c92cb0:  626f 6f74 486f 7374 00e1 80b9 0e40 79f6   *bootHost.....@y.*[1;53r[53;1H
+[1;54r[53;1H80c92cc0:  c11a 6312 91d1 b192 4516 241d 33e4 9a1e   *..c.....E.$.3...*[1;53r[53;1H
+[1;54r[53;1H80c92cd0:  7ced 018d 2307 262c c92f 7b97 7f7e faeb   *|...#.&,./{..~..*[1;53r[53;1H
+[1;54r[53;1H80c92ce0:  b7ff 7ead 9a3a fad4 70fb 1717 284f 49eb   *..~..:..p...(OI.*[1;53r[53;1H
+[1;54r[53;1H80c92cf0:  7994 4b5e f2d4 0235 e8a5 2556 fe24 3840   *y.K^...5..%V.$8@*[1;53r[53;1H
+[1;54r[53;1H80c92d00:  0954 7080 bba8 2000 0fe4 52d9 b894 17b7   *.Tp... ...R.....*[1;53r[53;1H
+[1;54r[53;1Hvalue = 21 = 0x15[1;53r[53;1H
+[1;54r[53;1H-> printf("%s\n", 0x8042cca0)[1;53r[53;1H
+[1;54r[53;1H€BÊ€€BËÀ[1;53r[53;1H
+[1;54r[53;1Hvalue = 9 = 0x9[1;53r[53;1H
+[1;54r[53;1H-> printf("%s",    \b n", 0x80c9234 50)[1;53r[53;1H
+[1;54r[53;1H€BÊð[1;53r[53;1H
+[1;54r[53;1Hvalue = 5 = 0x5[1;53r[53;1H
+[1;54r[53;1H-> printf("%s\b n", 0x80455280)[1;53r[53;1H
+[1;54r[53;1H€BÊ€€BËÀ[1;53r[53;1H
+[1;54r[53;1Hvalue = 9 = 0x9[1;53r[53;1H
+[1;54r[53;1H-> printf("%s",  \n", 0x0103 40000)[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HInstruction Bound Exception[1;53r[53;1H
+[1;54r[53;1HException Program Counter: 0x801c7fe4[1;53r[53;1H
+[1;54r[53;1HStatus Register: 0x10009c01[1;53r[53;1H
+[1;54r[53;1HCause Register: 0x10800008[1;53r[53;1H
+[1;54r[53;1HAccess Address : 0x01040000[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H80216aec shell          +1d4: shell (802b9560, 3, 80c74d04, ffffffff)[1;53r[53;1H
+[1;54r[53;1H80216d14 shell          +3fc: execute (802b9568, 80c84a20, 80, 1d2)[1;53r[53;1H
+[1;54r[53;1H80216e84 execute        +c4 : yyparse (80c84a20, 0, ffffffff, 1)[1;53r[53;1H
+[1;54r[53;1H8024621c yyparse        +8a8: 80244544 (eeeeeeee, eeeeeeee, eeeeee, eeeeeeee)[1;53r[53;1H
+[1;54r[53;1H8024472c yystart        +8bc: printf (80c74650, 1040000, 0, 0)[1;53r[53;1H
+[1;54r[53;1H802002a4 printf         +24 : fioFormatV (30300000, 80c84820, 8020750c, 0)[1;53r[53;1H
+[1;54r[53;1H80200b44 fioFormatV     +440: strlen (2, &yyval, &yypact, 0)[1;53r[53;1H
+[1;54r[53;1Hshell restarted.[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H-> exit[1;53r[53;1H
+[1;54r[53;1HU12H05500> ls[1;53r[53;1H
+[1;54r[53;1Hls : Command not found.[1;53r[53;1H
+[1;54r[53;1HU12H05500> ?[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HCommands are:[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1Hbridge         ddns           exit           ftpc           ip             [1;53r[53;1H
+[1;54r[53;1Hlan            nat            passwd         pot            reboot         [1;53r[53;1H
+[1;54r[53;1Hsave           show           sntp           time           uptime         [1;53r[53;1H
+[1;54r[53;1Hversion        wan            web            windsh         wla            [1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1H '..'[53;9H return to previous directory[1;53r[53;1H
+[1;54r[53;1H[1;53r[53;1H
+[1;54r[53;1HU12H05500> a exit[1;53r[53;1H
+[1;54r[53;1HLogin: [2;61H[?25l[0m(B[33;44m[1m+-------------------------------------------------------------------+[3;61H|                      Minicom Command Summary                      |[4;61H|                                                                   |[5;61H|              Commands can be called by CTRL-A <key>               |[6;61H|                                                                   |[7;61H|               Main Functions                  Other Functions     |[8;61H|                                                                   |[9;61H| Dialing directory..D  run script (Go)....G | Clear Screen.......C |[10;61H| Send files.........S  Receive files......R | cOnfigure Minicom..O |[11;61H| comm Parameters....P  Add linefeed.......A | Suspend minicom....J |[12;61H| Capture on/off.....L  Hangup.............H | eXit and reset.....X |[13;61H| send break.........F  initialize Modem...M | Quit with no reset.Q |[14;61H| Terminal settings..T  run Kermit.........K | Cursor key mode....I |[15;61H| lineWrap on/off....W  local Echo on/off..E | Help screen........Z |[16;61H| Paste file.........Y  Timestamp toggle...N | scroll Back........B |[17;61H| Add Carriage Ret...U                                              |[18;61H|                                                                   |[19;61H|             Select function or press Enter for none.              |[20;61H+-------------------------------------------------------------------+[19;115H[?12l[?25h[?12l[?25h[2;1H[0m(B[37;40m80c92c80:  626f 6f74 486f 7374 3a00 ffa5 9531 ca9e   *bootHost:....1..*                                                          [3;1H80c92c90:  80c9 2c70 0000 0130 de19 0e17 f04c 15ff   *..,p...0.....L..*                                                          [4;1H80c92ca0:  0000 0000 80f6 6330 0005 fcf1 80c9 2c80   *......c0......,.*                                                          [5;1H80c92cb0:  626f 6f74 486f 7374 00e1 80b9 0e40 79f6   *bootHost.....@y.*                                                          [6;1H80c92cc0:  c11a 6312 91d1 b192 4516 241d 33e4 9a1e   *..c.....E.$.3...*                                                          [7;1H80c92cd0:  7ced 018d 2307 262c c92f 7b97 7f7e faeb   *|...#.&,./{..~..*                                                          [8;1H80c92ce0:  b7ff 7ead 9a3a fad4 70fb 1717 284f 49eb   *..~..:..p...(OI.*                                                          [9;1H80c92cf0:  7994 4b5e f2d4 0235 e8a5 2556 fe24 3840   *y.K^...5..%V.$8@*                                                          [10;1H80c92d00:  0954 7080 bba8 2000 0fe4 52d9 b894 17b7   *.Tp... ...R.....*                                                          [11;1Hvalue = 21 = 0x15                                                                                                                [12;1H-> printf("%s\n", 0x8042cca0)                                                                                                    [13;1H€BÊ€€BËÀ                                                                                                                          [14;1Hvalue = 9 = 0x9                                                                                                                  [15;1H-> printf("%s\n", 0x80c92350)                                                                                                    [16;1H€BÊð                                                                                                                             [17;1Hvalue = 5 = 0x5                                                                                                                  [18;1H-> printf("%s\n", 0x80455280)                                                                                                    [19;1H€BÊ€€BËÀ                                                                                                                          [20;1Hvalue = 9 = 0x9                                                                                                                  [53;8H[8;85H[?25l[0m(B[33;44m[1m+----------------------+[9;85H|    Leave Minicom?    |[10;85H|               No     |[11;85H+----------------------+[10;106H[?25l[10;88H[0m(B[33;44m[7m[1m   Yes  [?12l[?25h[8;1H[0m(B[37;40m80c92ce0:  b7ff 7ead 9a3a fad4 70fb 1717 284f 49eb   *..~..:..p...(OI.*                                     [9;1H80c92cf0:  7994 4b5e f2d4 0235 e8a5 2556 fe24 3840   *y.K^...5..%V.$8@*                                     [10;1H80c92d00:  0954 7080 bba8 2000 0fe4 52d9 b894 17b7   *.Tp... ...R.....*                                     [11;1Hvalue = 21 = 0x15                                                                                           [53;8H[?12l[?25h[?12l[?25h[H[2J]2;\[?12l[?25h[?1l>[!p[4l>

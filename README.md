@@ -5,6 +5,7 @@ This file will serve as my journal for work done on the project, both work compl
 
 # TODO
 - make a header file for the vxworks compress functions
+- optimize the decompress program to make output file only as big as needed, not 10X the input size ( I was using 10x the input as that is the expected maximum compression rate)
 - hook up to the UART console again and get as much information as I can from it, especially about memory addresses and entry points
 - figure out the address in memory at which the decompressed image is loaded into, and the entrypoint
 - After determining load/entry address, get the firmware loaded into Ghidra and get Ghidra cooperating
