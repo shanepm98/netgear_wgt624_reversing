@@ -15,6 +15,22 @@ This file will serve as my journal for work done on the project, both work compl
 - write an in-memory fuzzer
 
 # Updates
+## 12/8/2025
+Connected to the router's UART shell and explored the available commands. They did not implement `ls()` on this router, probably due to space constraints.
+I was able to list files manually by using `opendir()`, `readdir()`, and `malloc()` to examine directory entries at a low level. Then I was able to open
+and read in the files manually using `open()` and `read()`ing them into a `malloc`'d buffer, and examining the memory with `d`.
+
+Even though debug commands arent included, it looks like I have all though low-level OS interface commands I need to roll my own. 
+Next steps:
+- reverse engineer the symbol table. I will need to to port into Ghidra for static analysis.
+- figure out how to load my own machine code into the device and execute it
+- figure out how to hook exception handler
+- write an in-memory fuzzer and debugger
+
+I don't think I'll need to patch the firmware to get code execution, as I have memory read/write commands using `d` and `m` in the shell. I can
+write the shellcode into memory using `m`. I just need to figure out how to make it execute at a given address. This is fun- Ill have to write
+actual shellcode.
+
 ## 11/27/2025
 Fixed the seg fault problem by rewriting the `zcalloc` and `zcfree` functions to use standard malloc calls instead of the highly-constrained
 static buffer it used originally. It makes sense to do it their way when the code has to run on a resource-constrained embedded system, but since
